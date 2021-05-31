@@ -1,0 +1,19 @@
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\bin\Debug\Gym Management System.exe.config
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\bin\Debug\Gym Management System.exe
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\bin\Debug\Gym Management System.pdb
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csprojAssemblyReference.cache
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.GMS_1v.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Properties.Resources.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csproj.GenerateResource.cache
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csproj.CoreCompileInputs.cache
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.exe
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.pdb
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Dashboard.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.AddFees.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.AddMembers.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.AddPackages.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Members.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Members_db_view.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Payments.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Payment_Due.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Modify_members.resources
