@@ -35,8 +35,8 @@ namespace Gym_Management_System
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ft_login_form21 = new Gym_Management_System.ft_login_form2();
             this.userControl11 = new Gym_Management_System.Ft_login_form1();
+            this.ft_login_form21 = new Gym_Management_System.ft_login_form2();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -135,14 +135,6 @@ namespace Gym_Management_System
             this.panel1.Size = new System.Drawing.Size(960, 241);
             this.panel1.TabIndex = 1;
             // 
-            // ft_login_form21
-            // 
-            this.ft_login_form21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ft_login_form21.Location = new System.Drawing.Point(0, 0);
-            this.ft_login_form21.Name = "ft_login_form21";
-            this.ft_login_form21.Size = new System.Drawing.Size(960, 241);
-            this.ft_login_form21.TabIndex = 1;
-            // 
             // userControl11
             // 
             this.userControl11.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -150,6 +142,14 @@ namespace Gym_Management_System
             this.userControl11.Name = "userControl11";
             this.userControl11.Size = new System.Drawing.Size(960, 241);
             this.userControl11.TabIndex = 2;
+            // 
+            // ft_login_form21
+            // 
+            this.ft_login_form21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ft_login_form21.Location = new System.Drawing.Point(0, 0);
+            this.ft_login_form21.Name = "ft_login_form21";
+            this.ft_login_form21.Size = new System.Drawing.Size(960, 241);
+            this.ft_login_form21.TabIndex = 1;
             // 
             // ft_wrapper
             // 

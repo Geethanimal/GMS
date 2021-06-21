@@ -225,6 +225,7 @@ namespace Gym_Management_System
             this.btn_show_pwhint.TabIndex = 7;
             this.btn_show_pwhint.Text = "hint";
             this.btn_show_pwhint.UseVisualStyleBackColor = false;
+            this.btn_show_pwhint.Click += new System.EventHandler(this.btn_show_pwhint_Click);
             // 
             // Password_tb_lg
             // 

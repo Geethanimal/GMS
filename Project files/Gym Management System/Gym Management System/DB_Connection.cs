@@ -18,7 +18,8 @@ namespace Gym_Management_System
         {
             try
             {
-                connectionstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\GMS_1.0_DB\GMS_1.0v_DB.mdf';Integrated Security=True;Connect Timeout=30";
+                connectionstring= @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='E:\GMS\Project files\Gym Management System\GMS_1.0_DB\GMS_1.0v_DB.mdf';Integrated Security=True;Connect Timeout=30";
+               //connectionstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\GMS_1.0_DB\GMS_1.0v_DB.mdf';Integrated Security=True;Connect Timeout=30";
                 con = new SqlConnection(connectionstring);
                 con.Open();
             }

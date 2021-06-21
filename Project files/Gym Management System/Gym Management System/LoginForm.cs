@@ -18,6 +18,7 @@ namespace Gym_Management_System
         public LoginForm()
         {
             InitializeComponent();
+            pw_hint_lbl.Hide();
         }
         private void checklogin(string qry)
         {
@@ -80,6 +81,34 @@ namespace Gym_Management_System
         {
             label1.Text = "Enter Pin Number here :";
             btn_clicked = true;
+        }
+
+        private void btn_show_pwhint_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DB_Connection dB_Connection = new DB_Connection();
+                string qry = "Select Password_Hint From Usertb";
+                SqlDataReader dr = dB_Connection.getData(qry);
+                if (dr.HasRows)
+                {
+                    dr.Read();
+                    pw_hint_lbl.Text = "Password Hint is : " + dr["Password_Hint"].ToString();
+                    pw_hint_lbl.Show();
+                }
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+
         }
     }
 }
