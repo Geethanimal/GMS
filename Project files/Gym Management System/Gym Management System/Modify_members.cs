@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace Gym_Management_System
 {
     public partial class Modify_members : Form
@@ -38,6 +39,7 @@ namespace Gym_Management_System
                         {
                             textBoxNIC.Text = da.GetValue(1).ToString();
                             textboxName.Text = da.GetValue(2).ToString();
+                            dateTimePicker1.Value = (DateTime)da.GetValue(3);
                             textboxGender.Text = da.GetValue(4).ToString();
                             textboxBodyType.Text = da.GetValue(5).ToString();
                             richTextBoxAddress.Text = da.GetValue(6).ToString();
@@ -64,8 +66,9 @@ namespace Gym_Management_System
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
+            textbox_Members_Id.Text = "";
             textBoxNIC.Text = "";
             textboxName.Text = "";
             textboxGender.Text = "";
@@ -75,6 +78,34 @@ namespace Gym_Management_System
             richTextBoxHealthCondition.Text = "";
             textboxEmergencyContactName.Text = "";
             textboxEmergencyContactPhoneNumber.Text = "";
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Are you sure that you want to update this member ?");
+            string Id = textbox_Members_Id.Text;
+            string NIC = textBoxNIC.Text;
+            string name = textboxName.Text;
+            string DOB = dateTimePicker1.Text;
+            string Gender = textboxGender.Text;
+            string Body_Type = textboxBodyType.Text;
+            string Address = richTextBoxAddress.Text;
+            string Mobile_Number = textboxMobileNumber.Text;
+            string Health_Condition = richTextBoxHealthCondition.Text;
+            string Emergency_Contact_Name = textboxEmergencyContactName.Text;
+            string Emergency_Contact_Number = (textboxEmergencyContactPhoneNumber.Text);
+            DB_Connection dB_Connection = new DB_Connection();
+            string query = "UPDATE Members SET NICorDL='"+NIC+"', MemberName='"+name+"' , DOB='"+DOB+"' , Gender='"+Gender+"' , Body_Type='"+Body_Type+"' , Address='"+Address+"' , Mobile_Number='"+Mobile_Number+"' , Health_Condition='"+Health_Condition+"' , Emergency_Contact_Name='"+Emergency_Contact_Name+"' , Emergency_Contact_Number='"+Emergency_Contact_Number+"' WHERE Id='"+Id+"'";
+            dB_Connection.update(query);
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Are you sure that you want to Delete this member details ?");
+            string Id = textbox_Members_Id.Text;
+            DB_Connection dB_Connection = new DB_Connection();
+            string query = "DELETE FROM Members Where Id='"+Id+"'";
+            dB_Connection.Delete(query);
         }
     }
 }

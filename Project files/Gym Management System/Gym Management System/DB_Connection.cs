@@ -43,6 +43,44 @@ namespace Gym_Management_System
                 MessageBox.Show(e.ToString());
             }
         }
+        public void update(String query)
+        {
+            try
+            {
+                cmd = new SqlCommand(query,con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Data Updated Successfully!");
+                cmd.Dispose();
+                con.Close();
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+        }
+        public void Delete(String query)
+        {
+            try
+            {
+                cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Data deleted Successfully!");
+                cmd.Dispose();
+                con.Close();
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+        }
         public SqlDataReader getData(String query)
         {
             SqlDataReader dr;
@@ -86,6 +124,6 @@ namespace Gym_Management_System
             }
             return null;
         }
-
+        
     }
 }

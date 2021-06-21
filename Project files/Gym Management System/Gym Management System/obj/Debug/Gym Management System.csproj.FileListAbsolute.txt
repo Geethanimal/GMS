@@ -1,7 +1,6 @@
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\bin\Debug\Gym Management System.exe.config
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\bin\Debug\Gym Management System.exe
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\bin\Debug\Gym Management System.pdb
-E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csprojAssemblyReference.cache
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.GMS_1v.resources
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Properties.Resources.resources
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csproj.GenerateResource.cache
@@ -17,3 +16,15 @@ E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Payments.resources
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Payment_Due.resources
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Modify_members.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Member_view_dialogbox.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Add_mem_image_D_Box.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csproj.CopyComplete
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.View_member_image.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Ft_login_form.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Ft_login_form2.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Login.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.lgtest.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.lgtest2.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.ft_wrapper.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Ft_login_form1.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.LoginForm.resources

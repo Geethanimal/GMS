@@ -214,6 +214,7 @@ namespace Gym_Management_System
             this.btnModifyMembers.Text = "Modify Members";
             this.btnModifyMembers.UseVisualStyleBackColor = true;
             this.btnModifyMembers.Click += new System.EventHandler(this.btnModifyMembers_Click);
+            this.btnModifyMembers.Leave += new System.EventHandler(this.btnModifyMembers_Leave);
             // 
             // tableLayoutPanel5
             // 

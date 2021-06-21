@@ -178,5 +178,7 @@ namespace Gym_Management_System
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+
     }
 }
