@@ -94,7 +94,7 @@ namespace Gym_Management_System
         }
         private void Add_mem_image_D_Box_Load(object sender, EventArgs e)
         {
-            comboBox_Cameralist.SelectedIndex = 2;
+            comboBox_Cameralist.SelectedIndex = 0;
         } 
 
         private void btn_camstart_Click_1(object sender, EventArgs e)
