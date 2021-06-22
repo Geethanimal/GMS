@@ -42,12 +42,12 @@ namespace Gym_Management_System
             this.btnModifyEquipments = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel_Members = new System.Windows.Forms.Panel();
+            this.modifyStaff1 = new Gym_Management_System.ModifyStaff();
             this.staff_DB_view1 = new Gym_Management_System.Staff_DB_view();
             this.addstaff1 = new Gym_Management_System.Addstaff();
             this.modifyequipments1 = new Gym_Management_System.Modifyequipments();
             this.equipments_DBView1 = new Gym_Management_System.Equipments_DBView();
             this.addEquipments1 = new Gym_Management_System.AddEquipments();
-            this.modifyStaff1 = new Gym_Management_System.ModifyStaff();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -225,7 +225,7 @@ namespace Gym_Management_System
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.99923F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 89.00078F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
             this.tableLayoutPanel5.Controls.Add(this.panel_Members, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 135);
@@ -245,11 +245,20 @@ namespace Gym_Management_System
             this.panel_Members.Controls.Add(this.modifyequipments1);
             this.panel_Members.Controls.Add(this.equipments_DBView1);
             this.panel_Members.Controls.Add(this.addEquipments1);
-            this.panel_Members.Location = new System.Drawing.Point(149, 56);
+            this.panel_Members.Location = new System.Drawing.Point(147, 56);
             this.panel_Members.Margin = new System.Windows.Forms.Padding(0, 50, 0, 0);
             this.panel_Members.Name = "panel_Members";
             this.panel_Members.Size = new System.Drawing.Size(1179, 680);
             this.panel_Members.TabIndex = 2;
+            // 
+            // modifyStaff1
+            // 
+            this.modifyStaff1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.modifyStaff1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.modifyStaff1.Location = new System.Drawing.Point(0, 0);
+            this.modifyStaff1.Name = "modifyStaff1";
+            this.modifyStaff1.Size = new System.Drawing.Size(1179, 680);
+            this.modifyStaff1.TabIndex = 5;
             // 
             // staff_DB_view1
             // 
@@ -294,15 +303,6 @@ namespace Gym_Management_System
             this.addEquipments1.Name = "addEquipments1";
             this.addEquipments1.Size = new System.Drawing.Size(1179, 680);
             this.addEquipments1.TabIndex = 0;
-            // 
-            // modifyStaff1
-            // 
-            this.modifyStaff1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.modifyStaff1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.modifyStaff1.Location = new System.Drawing.Point(0, 0);
-            this.modifyStaff1.Name = "modifyStaff1";
-            this.modifyStaff1.Size = new System.Drawing.Size(1179, 680);
-            this.modifyStaff1.TabIndex = 5;
             // 
             // Staff
             // 
