@@ -110,5 +110,23 @@ namespace Gym_Management_System
 
 
         }
+
+        private void btn_show_Click(object sender, EventArgs e)
+        {
+            if(Password_tb_lg.PasswordChar == '*')
+            {
+                btn_hide.BringToFront();
+                Password_tb_lg.PasswordChar = '\0';
+            }
+        }
+
+        private void btn_hide_Click(object sender, EventArgs e)
+        {
+            if (Password_tb_lg.PasswordChar == '\0')
+            {
+                btn_show.BringToFront();
+                Password_tb_lg.PasswordChar = '*';
+            }
+        }
     }
 }
