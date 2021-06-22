@@ -30,10 +30,6 @@ namespace Gym_Management_System
             this.form_load_panel.Controls.Add(dashboard);
             dashboard.Show();
 
-           
-
-
-
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -160,6 +156,12 @@ namespace Gym_Management_System
             btnDashboard.BackColor = Color.FromArgb(24, 30, 54);
             //changing main label name
             Main_label.Text = "Instructions";
+            //Load Instructions form
+            this.form_load_panel.Controls.Clear();
+            Instructions instructions = new Instructions() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            instructions.FormBorderStyle = FormBorderStyle.None;
+            this.form_load_panel.Controls.Add(instructions);
+            instructions.Show();
         }
 
         private void btnInstructions_Leave(object sender, EventArgs e)
