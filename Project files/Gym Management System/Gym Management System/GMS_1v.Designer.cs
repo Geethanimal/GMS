@@ -174,7 +174,7 @@ namespace Gym_Management_System
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.996004F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel5.Controls.Add(this.btnMinimize, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.btnMaximize, 2, 0);
@@ -201,7 +201,7 @@ namespace Gym_Management_System
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(1255, 60);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1253, 60);
             this.tableLayoutPanel6.TabIndex = 2;
             // 
             // textBox1
@@ -211,7 +211,7 @@ namespace Gym_Management_System
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.textBox1.Location = new System.Drawing.Point(463, 10);
+            this.textBox1.Location = new System.Drawing.Point(461, 10);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(784, 40);
@@ -224,7 +224,7 @@ namespace Gym_Management_System
             this.Main_label.AutoSize = true;
             this.Main_label.Font = new System.Drawing.Font("Nirmala UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Main_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.Main_label.Location = new System.Drawing.Point(95, 0);
+            this.Main_label.Location = new System.Drawing.Point(94, 0);
             this.Main_label.Name = "Main_label";
             this.Main_label.Size = new System.Drawing.Size(265, 60);
             this.Main_label.TabIndex = 2;
@@ -237,7 +237,7 @@ namespace Gym_Management_System
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximize.Font = new System.Drawing.Font("Webdings", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.btnMaximize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnMaximize.Location = new System.Drawing.Point(1311, 5);
+            this.btnMaximize.Location = new System.Drawing.Point(1309, 5);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(0);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(51, 53);
@@ -253,7 +253,7 @@ namespace Gym_Management_System
             this.Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Close.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.Close.Location = new System.Drawing.Point(1370, 5);
+            this.Close.Location = new System.Drawing.Point(1368, 5);
             this.Close.Margin = new System.Windows.Forms.Padding(0);
             this.Close.Name = "Close";
             this.Close.Size = new System.Drawing.Size(36, 53);
@@ -453,7 +453,7 @@ namespace Gym_Management_System
             this.btnMinimize.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.btnMinimize.Image = global::Gym_Management_System.Properties.Resources.Line_4;
-            this.btnMinimize.Location = new System.Drawing.Point(1255, 12);
+            this.btnMinimize.Location = new System.Drawing.Point(1253, 12);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(52, 39);
