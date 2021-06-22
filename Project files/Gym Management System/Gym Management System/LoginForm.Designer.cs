@@ -29,6 +29,7 @@ namespace Gym_Management_System
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_Login = new System.Windows.Forms.Button();
@@ -43,6 +44,8 @@ namespace Gym_Management_System
             this.btn_show_pwhint = new System.Windows.Forms.Button();
             this.Password_tb_lg = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btn_hide = new System.Windows.Forms.Button();
+            this.btn_show = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -191,6 +194,8 @@ namespace Gym_Management_System
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btn_show);
+            this.panel1.Controls.Add(this.btn_hide);
             this.panel1.Controls.Add(this.pw_hint_lbl);
             this.panel1.Controls.Add(this.btn_show_pwhint);
             this.panel1.Controls.Add(this.Password_tb_lg);
@@ -219,9 +224,9 @@ namespace Gym_Management_System
             this.btn_show_pwhint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_show_pwhint.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_show_pwhint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.btn_show_pwhint.Location = new System.Drawing.Point(372, 32);
+            this.btn_show_pwhint.Location = new System.Drawing.Point(397, 58);
             this.btn_show_pwhint.Name = "btn_show_pwhint";
-            this.btn_show_pwhint.Size = new System.Drawing.Size(96, 28);
+            this.btn_show_pwhint.Size = new System.Drawing.Size(80, 30);
             this.btn_show_pwhint.TabIndex = 7;
             this.btn_show_pwhint.Text = "hint";
             this.btn_show_pwhint.UseVisualStyleBackColor = false;
@@ -234,6 +239,7 @@ namespace Gym_Management_System
             this.Password_tb_lg.Location = new System.Drawing.Point(20, 25);
             this.Password_tb_lg.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.Password_tb_lg.Name = "Password_tb_lg";
+            this.Password_tb_lg.PasswordChar = '*';
             this.Password_tb_lg.Size = new System.Drawing.Size(322, 34);
             this.Password_tb_lg.TabIndex = 6;
             // 
@@ -248,6 +254,34 @@ namespace Gym_Management_System
             this.label4.Size = new System.Drawing.Size(133, 28);
             this.label4.TabIndex = 1;
             this.label4.Text = "Login to GMS";
+            // 
+            // btn_hide
+            // 
+            this.btn_hide.BackColor = System.Drawing.Color.White;
+            this.btn_hide.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_hide.BackgroundImage")));
+            this.btn_hide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_hide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_hide.ForeColor = System.Drawing.Color.Black;
+            this.btn_hide.Location = new System.Drawing.Point(301, 25);
+            this.btn_hide.Name = "btn_hide";
+            this.btn_hide.Size = new System.Drawing.Size(41, 34);
+            this.btn_hide.TabIndex = 9;
+            this.btn_hide.UseVisualStyleBackColor = false;
+            this.btn_hide.Click += new System.EventHandler(this.btn_hide_Click);
+            // 
+            // btn_show
+            // 
+            this.btn_show.BackColor = System.Drawing.Color.White;
+            this.btn_show.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_show.BackgroundImage")));
+            this.btn_show.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_show.ForeColor = System.Drawing.Color.Black;
+            this.btn_show.Location = new System.Drawing.Point(301, 25);
+            this.btn_show.Name = "btn_show";
+            this.btn_show.Size = new System.Drawing.Size(41, 34);
+            this.btn_show.TabIndex = 10;
+            this.btn_show.UseVisualStyleBackColor = false;
+            this.btn_show.Click += new System.EventHandler(this.btn_show_Click);
             // 
             // LoginForm
             // 
@@ -284,5 +318,7 @@ namespace Gym_Management_System
         private System.Windows.Forms.Button btn_show_pwhint;
         private System.Windows.Forms.TextBox Password_tb_lg;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btn_show;
+        private System.Windows.Forms.Button btn_hide;
     }
 }
