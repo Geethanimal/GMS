@@ -29,6 +29,11 @@ namespace Gym_Management_System
             dashboard.FormBorderStyle = FormBorderStyle.None;
             this.form_load_panel.Controls.Add(dashboard);
             dashboard.Show();
+
+           
+
+
+
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -109,6 +114,14 @@ namespace Gym_Management_System
             btnDashboard.BackColor = Color.FromArgb(24, 30, 54);
             //changing main label name
             Main_label.Text = "Staff";
+            //Load Staff form
+            this.form_load_panel.Controls.Clear();
+            Staff staff_1 = new Staff() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            staff_1.FormBorderStyle = FormBorderStyle.None;
+            this.form_load_panel.Controls.Add(staff_1);
+            staff_1.Show();
+
+
         }
 
         private void btnStaff_Leave(object sender, EventArgs e)
@@ -125,6 +138,12 @@ namespace Gym_Management_System
             btnDashboard.BackColor = Color.FromArgb(24, 30, 54);
             //changing main label name
             Main_label.Text = "Equipments";
+            //Load Equipments form
+            this.form_load_panel.Controls.Clear();
+            Equipments equipments = new Equipments() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            equipments.FormBorderStyle = FormBorderStyle.None;
+            this.form_load_panel.Controls.Add(equipments);
+            equipments.Show();
         }
 
         private void btnEquipments_Leave(object sender, EventArgs e)

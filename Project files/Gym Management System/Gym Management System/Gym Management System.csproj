@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddEquipments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddEquipments.Designer.cs">
+      <DependentUpon>AddEquipments.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddFees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,12 @@
     <Compile Include="AddPackages.Designer.cs">
       <DependentUpon>AddPackages.cs</DependentUpon>
     </Compile>
+    <Compile Include="Addstaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Addstaff.Designer.cs">
+      <DependentUpon>Addstaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_mem_image_D_Box.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +98,18 @@
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="DB_Connection.cs" />
+    <Compile Include="Equipments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipments.Designer.cs">
+      <DependentUpon>Equipments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equipments_DBView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Equipments_DBView.Designer.cs">
+      <DependentUpon>Equipments_DBView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ft_login_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +176,18 @@
     <Compile Include="Member_view_dialogbox.Designer.cs">
       <DependentUpon>Member_view_dialogbox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modifyequipments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modifyequipments.Designer.cs">
+      <DependentUpon>Modifyequipments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModifyStaff.Designer.cs">
+      <DependentUpon>ModifyStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modify_members.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,12 +220,27 @@
     <Compile Include="Ft_login_form1.Designer.cs">
       <DependentUpon>Ft_login_form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff.Designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_DB_view.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff_DB_view.Designer.cs">
+      <DependentUpon>Staff_DB_view.cs</DependentUpon>
+    </Compile>
     <Compile Include="View_member_image.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View_member_image.Designer.cs">
       <DependentUpon>View_member_image.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddEquipments.resx">
+      <DependentUpon>AddEquipments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddFees.resx">
       <DependentUpon>AddFees.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,11 +250,20 @@
     <EmbeddedResource Include="AddPackages.resx">
       <DependentUpon>AddPackages.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Addstaff.resx">
+      <DependentUpon>Addstaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add_mem_image_D_Box.resx">
       <DependentUpon>Add_mem_image_D_Box.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipments.resx">
+      <DependentUpon>Equipments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipments_DBView.resx">
+      <DependentUpon>Equipments_DBView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ft_login_form.resx">
       <DependentUpon>Ft_login_form.cs</DependentUpon>
@@ -238,6 +298,12 @@
     <EmbeddedResource Include="Member_view_dialogbox.resx">
       <DependentUpon>Member_view_dialogbox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modifyequipments.resx">
+      <DependentUpon>Modifyequipments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyStaff.resx">
+      <DependentUpon>ModifyStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modify_members.resx">
       <DependentUpon>Modify_members.cs</DependentUpon>
     </EmbeddedResource>
@@ -262,6 +328,12 @@
     </Compile>
     <EmbeddedResource Include="Ft_login_form1.resx">
       <DependentUpon>Ft_login_form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_DB_view.resx">
+      <DependentUpon>Staff_DB_view.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View_member_image.resx">
       <DependentUpon>View_member_image.cs</DependentUpon>
