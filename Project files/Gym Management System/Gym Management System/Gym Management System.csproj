@@ -42,6 +42,11 @@
     <Reference Include="AForge.Video.DirectShow">
       <HintPath>..\..\..\..\..\..\..\..\Images\New folder\Release\AForge.Video.DirectShow.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +58,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddEquipments.cs">
@@ -238,6 +244,7 @@
     <Compile Include="Ft_login_form1.Designer.cs">
       <DependentUpon>Ft_login_form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="QRmailSender.cs" />
     <Compile Include="Staff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,12 +256,6 @@
     </Compile>
     <Compile Include="Staff_DB_view.Designer.cs">
       <DependentUpon>Staff_DB_view.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View_member_image.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View_member_image.Designer.cs">
-      <DependentUpon>View_member_image.cs</DependentUpon>
     </Compile>
     <Compile Include="Workoutplans.cs">
       <SubType>UserControl</SubType>
@@ -368,12 +369,10 @@
     <EmbeddedResource Include="Staff_DB_view.resx">
       <DependentUpon>Staff_DB_view.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View_member_image.resx">
-      <DependentUpon>View_member_image.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Workoutplans.resx">
       <DependentUpon>Workoutplans.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

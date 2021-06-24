@@ -18,6 +18,7 @@ namespace Gym_Management_System
     public partial class Add_mem_image_D_Box : Form
     {
         public string imgpath;
+        public bool btnmemaddclick;
         public Add_mem_image_D_Box()
         {
             InitializeComponent();
@@ -69,19 +70,21 @@ namespace Gym_Management_System
         {
            try
             {
+                btnmemaddclick = true;
+               
                 if (ofd.CheckFileExists)
                 {
+                    
                     string path = Application.StartupPath.Substring(0, Application.StartupPath.Length-10);
                     AddMembers am = new AddMembers();
-                    //System.IO.File.Copy(ofd.FileName, path + @"\Images\" + am.mem_id + ".jpg",true);
-                    pictureBox1.Image.Save(path + @"\Images\" + am.mem_id + ".jpg");
-                    imgpath =path + @"\Images\" + am.mem_id + ".jpg";
+                    pictureBox1.Image.Save(path + @"\Images\Member DP\" + am.mem_id + ".jpg");
+                    imgpath =path + @"\Images\Member DP\" + am.mem_id + ".jpg";
                     MessageBox.Show("Image added Successfully!");
                     if (VideoCaptureDevice != null)
                     {
                         VideoCaptureDevice.Stop();
                     }
-                    
+                   
                     this.Close();
                 }
             }

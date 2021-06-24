@@ -33,6 +33,10 @@ namespace Gym_Management_System
         {
             Member_view_dialogbox mv_d = new Member_view_dialogbox();
             dataGridView_Members.CurrentRow.Selected = true;
+            if (dataGridView_Members.Rows[e.RowIndex].Cells["Member_dp"].Value.ToString()!="")
+            {
+                mv_d.member_dp_picturebox.Image = new Bitmap(dataGridView_Members.Rows[e.RowIndex].Cells["Member_dp"].Value.ToString());
+            }
             mv_d.lbl_mid_v.Text = dataGridView_Members.Rows[e.RowIndex].Cells["Id"].Value.ToString();
             mv_d.lbl_nod_v.Text = dataGridView_Members.Rows[e.RowIndex].Cells["NICorDL"].Value.ToString();
             mv_d.lbl_mn_v.Text = dataGridView_Members.Rows[e.RowIndex].Cells["MemberName"].Value.ToString();

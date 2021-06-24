@@ -41,21 +41,25 @@ namespace Gym_Management_System
             this.lbl_nod_v = new System.Windows.Forms.Label();
             this.lbl_member_id = new System.Windows.Forms.Label();
             this.lbl_mid_v = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_hc_v = new System.Windows.Forms.Label();
-            this.lbl_ecnum_v = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.lbl_ecn_v = new System.Windows.Forms.Label();
             this.lbl_bt_v = new System.Windows.Forms.Label();
+            this.lbl_ecn_v = new System.Windows.Forms.Label();
             this.lbl_dob_v = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbl_ecnum_v = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.member_dp_picturebox = new System.Windows.Forms.PictureBox();
+            this.member_qr_picturebox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.member_dp_picturebox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.member_qr_picturebox)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -89,6 +93,8 @@ namespace Gym_Management_System
             this.tableLayoutPanel4.Controls.Add(this.lbl_nod_v, 1, 2);
             this.tableLayoutPanel4.Controls.Add(this.lbl_member_id, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.lbl_mid_v, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.member_dp_picturebox, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.member_qr_picturebox, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
@@ -223,18 +229,6 @@ namespace Gym_Management_System
             this.lbl_mid_v.TabIndex = 0;
             this.lbl_mid_v.Text = "__________";
             // 
-            // label17
-            // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(20, 121);
-            this.label17.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(227, 23);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Emergency Contact Number";
-            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 2;
@@ -274,29 +268,17 @@ namespace Gym_Management_System
             this.lbl_hc_v.TabIndex = 0;
             this.lbl_hc_v.Text = "__________";
             // 
-            // lbl_ecnum_v
+            // lbl_bt_v
             // 
-            this.lbl_ecnum_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbl_ecnum_v.AutoSize = true;
-            this.lbl_ecnum_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ecnum_v.Location = new System.Drawing.Point(265, 121);
-            this.lbl_ecnum_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
-            this.lbl_ecnum_v.Name = "lbl_ecnum_v";
-            this.lbl_ecnum_v.Size = new System.Drawing.Size(80, 23);
-            this.lbl_ecnum_v.TabIndex = 0;
-            this.lbl_ecnum_v.Text = "__________";
-            // 
-            // label15
-            // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(20, 68);
-            this.label15.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(210, 23);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Emergency Contact Name";
+            this.lbl_bt_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_bt_v.AutoSize = true;
+            this.lbl_bt_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_bt_v.Location = new System.Drawing.Point(265, 174);
+            this.lbl_bt_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
+            this.lbl_bt_v.Name = "lbl_bt_v";
+            this.lbl_bt_v.Size = new System.Drawing.Size(80, 23);
+            this.lbl_bt_v.TabIndex = 0;
+            this.lbl_bt_v.Text = "__________";
             // 
             // lbl_ecn_v
             // 
@@ -309,18 +291,6 @@ namespace Gym_Management_System
             this.lbl_ecn_v.Size = new System.Drawing.Size(80, 23);
             this.lbl_ecn_v.TabIndex = 0;
             this.lbl_ecn_v.Text = "__________";
-            // 
-            // lbl_bt_v
-            // 
-            this.lbl_bt_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbl_bt_v.AutoSize = true;
-            this.lbl_bt_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_bt_v.Location = new System.Drawing.Point(265, 174);
-            this.lbl_bt_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
-            this.lbl_bt_v.Name = "lbl_bt_v";
-            this.lbl_bt_v.Size = new System.Drawing.Size(80, 23);
-            this.lbl_bt_v.TabIndex = 0;
-            this.lbl_bt_v.Text = "__________";
             // 
             // lbl_dob_v
             // 
@@ -346,6 +316,17 @@ namespace Gym_Management_System
             this.label5.TabIndex = 0;
             this.label5.Text = "Date Of Birth";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(20, 232);
+            this.label12.Margin = new System.Windows.Forms.Padding(20, 20, 3, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(140, 23);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Health Condition";
+            // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -358,16 +339,41 @@ namespace Gym_Management_System
             this.label7.TabIndex = 0;
             this.label7.Text = "Body Type";
             // 
-            // label12
+            // lbl_ecnum_v
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(20, 232);
-            this.label12.Margin = new System.Windows.Forms.Padding(20, 20, 3, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(140, 23);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Health Condition";
+            this.lbl_ecnum_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_ecnum_v.AutoSize = true;
+            this.lbl_ecnum_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ecnum_v.Location = new System.Drawing.Point(265, 121);
+            this.lbl_ecnum_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
+            this.lbl_ecnum_v.Name = "lbl_ecnum_v";
+            this.lbl_ecnum_v.Size = new System.Drawing.Size(80, 23);
+            this.lbl_ecnum_v.TabIndex = 0;
+            this.lbl_ecnum_v.Text = "__________";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(20, 121);
+            this.label17.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(227, 23);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Emergency Contact Number";
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(20, 68);
+            this.label15.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(210, 23);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Emergency Contact Name";
             // 
             // tableLayoutPanel3
             // 
@@ -381,6 +387,26 @@ namespace Gym_Management_System
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1000, 65);
             this.tableLayoutPanel3.TabIndex = 2;
+            // 
+            // member_dp_picturebox
+            // 
+            this.member_dp_picturebox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.member_dp_picturebox.Location = new System.Drawing.Point(275, 32);
+            this.member_dp_picturebox.Name = "member_dp_picturebox";
+            this.member_dp_picturebox.Size = new System.Drawing.Size(200, 200);
+            this.member_dp_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.member_dp_picturebox.TabIndex = 1;
+            this.member_dp_picturebox.TabStop = false;
+            // 
+            // member_qr_picturebox
+            // 
+            this.member_qr_picturebox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.member_qr_picturebox.Location = new System.Drawing.Point(23, 32);
+            this.member_qr_picturebox.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.member_qr_picturebox.Name = "member_qr_picturebox";
+            this.member_qr_picturebox.Size = new System.Drawing.Size(200, 200);
+            this.member_qr_picturebox.TabIndex = 2;
+            this.member_qr_picturebox.TabStop = false;
             // 
             // Member_view_dialogbox
             // 
@@ -400,6 +426,8 @@ namespace Gym_Management_System
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.member_dp_picturebox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.member_qr_picturebox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -430,5 +458,7 @@ namespace Gym_Management_System
         public System.Windows.Forms.Label lbl_ecn_v;
         public System.Windows.Forms.Label lbl_bt_v;
         public System.Windows.Forms.Label lbl_dob_v;
+        private System.Windows.Forms.PictureBox member_qr_picturebox;
+        public System.Windows.Forms.PictureBox member_dp_picturebox;
     }
 }

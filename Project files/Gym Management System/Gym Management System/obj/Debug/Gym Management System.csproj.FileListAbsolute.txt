@@ -19,7 +19,6 @@ E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Member_view_dialogbox.resources
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Add_mem_image_D_Box.resources
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csproj.CopyComplete
-E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.View_member_image.resources
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Ft_login_form.resources
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Ft_login_form2.resources
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Login.resources
@@ -71,3 +70,18 @@ E:\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_M
 E:\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Instructions.resources
 E:\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Workoutplans.resources
 E:\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Find_Body_type.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\bin\Debug\QRCoder.dll
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csprojAssemblyReference.cache
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.AddEquipments.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.AddInstructions.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Addstaff.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Equipments.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Equipments_DBView.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Find_Body_type.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Instructions.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Modifyequipments.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.ModifyStaff.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Preloader.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Staff.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Staff_DB_view.resources
+E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Workoutplans.resources
