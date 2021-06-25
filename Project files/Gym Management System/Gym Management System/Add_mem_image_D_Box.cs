@@ -17,6 +17,7 @@ namespace Gym_Management_System
 
     public partial class Add_mem_image_D_Box : Form
     {
+        public int id;
         public string imgpath;
         public bool btnmemaddclick;
         public Add_mem_image_D_Box()
@@ -77,8 +78,8 @@ namespace Gym_Management_System
                     
                     string path = Application.StartupPath.Substring(0, Application.StartupPath.Length-10);
                     AddMembers am = new AddMembers();
-                    pictureBox1.Image.Save(path + @"\Images\Member DP\" + am.mem_id + ".jpg");
-                    imgpath =path + @"\Images\Member DP\" + am.mem_id + ".jpg";
+                    pictureBox1.Image.Save(path + @"\Images\Member DP\" + id + ".jpg");
+                    imgpath =path + @"\Images\Member DP\" + id + ".jpg";
                     MessageBox.Show("Image added Successfully!");
                     if (VideoCaptureDevice != null)
                     {

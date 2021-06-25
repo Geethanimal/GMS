@@ -47,6 +47,7 @@ namespace Gym_Management_System
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Add_mem_image_D_Box dialogbox = new Add_mem_image_D_Box();
+            dialogbox.id = mem_id;
             dialogbox.ShowDialog();
             mem_imgpath = dialogbox.imgpath;
             if (dialogbox.btnmemaddclick == true)

@@ -16,8 +16,7 @@ namespace Gym_Management_System
     public partial class Modify_members : Form
     {
         public string Id;
-        
-        private string Member_dp_path;
+        private string namef, emailf,Member_dp_path;
         public Modify_members()
         {
             InitializeComponent();
@@ -40,8 +39,9 @@ namespace Gym_Management_System
 
         private void btn_update_Click(object sender, EventArgs e)
         {
+            
             MessageBox.Show("Are you sure that you want to update this member ?");
-            string Id = textbox_Members_Id.Text;
+            Id = textbox_Members_Id.Text;
             string NIC = textBoxNIC.Text;
             string name = textboxName.Text;
             string Gender = textboxGender.Text;
@@ -56,32 +56,18 @@ namespace Gym_Management_System
             DB_Connection dB_Connection = new DB_Connection();
             string query = "UPDATE Members SET NICorDL='"+NIC+"', MemberName='"+name+"' , Gender='"+Gender+"' , Body_Type='"+Body_Type+"' , Address='"+Address+"' , Mobile_Number='"+Mobile_Number+"' , Health_Condition='"+Health_Condition+"' , Emergency_Contact_Name='"+Emergency_Contact_Name+"' , Emergency_Contact_Number='"+Emergency_Contact_Number+ "', Member_dp='" + Member_dp_path + "' , Email = '" + Email + "' WHERE Id='" + Id+"'";
             dB_Connection.update(query);
-        }
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Are you sure that you want to Delete this member details ?");
-            Id = textbox_Members_Id.Text;
-            DB_Connection dB_Connection = new DB_Connection();
-            string query = "DELETE FROM Members Where Id='"+Id+"'";
-            dB_Connection.Delete(query);
-        }
-
-        private void textbox_Members_Id_TextChanged_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            
-            Add_mem_image_D_Box add_Mem_Image_D_Box_update = new Add_mem_image_D_Box();
-            add_Mem_Image_D_Box_update.ShowDialog();
-            Member_dp_path = add_Mem_Image_D_Box_update.imgpath;
+            string qrimgpath = Application.StartupPath.Substring(0, Application.StartupPath.Length - 10) + "\\Images\\Member QR\\" + Id + "memQR.jpg";
+            string qrsubject = (Id.ToString() + NIC + name).ToString();
+            QRmailSender qRmailSender = new QRmailSender();
+            qRmailSender.qrgen(qrsubject, qrimgpath);
+            qRmailSender.Emailgen(namef, "member");
+            qRmailSender.Emailsend(emailf, qrimgpath);
         }
 
         private void textbox_Members_Id_KeyDown(object sender, KeyEventArgs e)
         {
+
             if (e.KeyCode == Keys.Enter)
             {
                 if (textbox_Members_Id.Text != "")
@@ -132,5 +118,34 @@ namespace Gym_Management_System
                 }
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Are you sure that you want to Delete this member details ?");
+            Id = textbox_Members_Id.Text;
+            DB_Connection dB_Connection = new DB_Connection();
+            string query = "DELETE FROM Members Where Id='"+Id+"'";
+            dB_Connection.Delete(query);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Id = textbox_Members_Id.Text;
+            if (Id != "")
+            {
+                Add_mem_image_D_Box add_Mem_Image_D_Box_update = new Add_mem_image_D_Box();
+                add_Mem_Image_D_Box_update.id = int.Parse(Id);
+                add_Mem_Image_D_Box_update.ShowDialog();
+                Member_dp_path = add_Mem_Image_D_Box_update.imgpath;
+                
+            }
+            else
+            {
+                MessageBox.Show("First you must Enter member Id !");
+            }
+            
+        }
+
+        
     }
 }

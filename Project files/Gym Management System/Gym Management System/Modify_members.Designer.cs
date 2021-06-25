@@ -45,7 +45,7 @@ namespace Gym_Management_System
             this.label14 = new System.Windows.Forms.Label();
             this.memEmail_tb = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.textbox_Members_Id = new System.Windows.Forms.TextBox();
             this.labelMID = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -68,7 +68,7 @@ namespace Gym_Management_System
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
@@ -124,7 +124,7 @@ namespace Gym_Management_System
             this.tableLayoutPanel3.Controls.Add(this.label14, 0, 6);
             this.tableLayoutPanel3.Controls.Add(this.memEmail_tb, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.pictureBox1, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel6, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
@@ -295,37 +295,42 @@ namespace Gym_Management_System
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // panel1
+            // tableLayoutPanel6
             // 
-            this.panel1.Controls.Add(this.textbox_Members_Id);
-            this.panel1.Controls.Add(this.labelMID);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(302, 196);
-            this.panel1.TabIndex = 7;
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.22973F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.77027F));
+            this.tableLayoutPanel6.Controls.Add(this.textbox_Members_Id, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.labelMID, 0, 0);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 1;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(296, 190);
+            this.tableLayoutPanel6.TabIndex = 7;
             // 
             // textbox_Members_Id
             // 
+            this.textbox_Members_Id.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textbox_Members_Id.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_Members_Id.Location = new System.Drawing.Point(55, 117);
+            this.textbox_Members_Id.Location = new System.Drawing.Point(201, 76);
             this.textbox_Members_Id.Name = "textbox_Members_Id";
-            this.textbox_Members_Id.Size = new System.Drawing.Size(135, 38);
-            this.textbox_Members_Id.TabIndex = 2;
-            this.textbox_Members_Id.TextChanged += new System.EventHandler(this.textbox_Members_Id_TextChanged_1);
+            this.textbox_Members_Id.Size = new System.Drawing.Size(79, 38);
+            this.textbox_Members_Id.TabIndex = 4;
             this.textbox_Members_Id.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textbox_Members_Id_KeyDown);
             // 
             // labelMID
             // 
+            this.labelMID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelMID.AutoSize = true;
             this.labelMID.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.labelMID.Location = new System.Drawing.Point(49, 82);
+            this.labelMID.Location = new System.Drawing.Point(35, 79);
             this.labelMID.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
             this.labelMID.Name = "labelMID";
             this.labelMID.Size = new System.Drawing.Size(155, 32);
-            this.labelMID.TabIndex = 1;
+            this.labelMID.TabIndex = 3;
             this.labelMID.Text = "Member ID  :";
             this.labelMID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -568,8 +573,8 @@ namespace Gym_Management_System
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -611,7 +616,7 @@ namespace Gym_Management_System
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox memEmail_tb;
         public System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.TextBox textbox_Members_Id;
         private System.Windows.Forms.Label labelMID;
     }
