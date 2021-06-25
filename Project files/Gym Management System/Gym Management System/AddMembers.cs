@@ -104,6 +104,9 @@ namespace Gym_Management_System
             memEmail_tb.Text = "";
         }
 
-        
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

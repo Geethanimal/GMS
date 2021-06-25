@@ -131,3 +131,4 @@ F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\D
 F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.exe
 F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.pdb
 F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Add_equip_picture_D_Box.resources
+E:\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Add_equip_picture_D_Box.resources

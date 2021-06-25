@@ -58,14 +58,14 @@ namespace Gym_Management_System
             this.label6 = new System.Windows.Forms.Label();
             this.richTextBoxAddress = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.richTextBoxHealthCondition = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_update = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.richTextBoxHealthCondition = new System.Windows.Forms.RichTextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -132,10 +132,10 @@ namespace Gym_Management_System
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 7;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.62032F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.19073F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.556149F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.51693F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.68984F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.12121F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.447415F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.625669F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.12121F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.83422F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -158,7 +158,7 @@ namespace Gym_Management_System
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label3.Location = new System.Drawing.Point(30, 318);
+            this.label3.Location = new System.Drawing.Point(30, 321);
             this.label3.Margin = new System.Windows.Forms.Padding(30, 0, 3, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(269, 32);
@@ -172,7 +172,7 @@ namespace Gym_Management_System
             this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
             this.dateTimePicker1.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(329, 315);
+            this.dateTimePicker1.Location = new System.Drawing.Point(329, 318);
             this.dateTimePicker1.MinDate = new System.DateTime(1921, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(249, 38);
@@ -184,7 +184,7 @@ namespace Gym_Management_System
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label2.Location = new System.Drawing.Point(30, 265);
+            this.label2.Location = new System.Drawing.Point(30, 267);
             this.label2.Margin = new System.Windows.Forms.Padding(30, 0, 3, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(269, 32);
@@ -196,7 +196,7 @@ namespace Gym_Management_System
             // 
             this.textboxName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textboxName.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxName.Location = new System.Drawing.Point(327, 262);
+            this.textboxName.Location = new System.Drawing.Point(327, 264);
             this.textboxName.Name = "textboxName";
             this.textboxName.Size = new System.Drawing.Size(252, 38);
             this.textboxName.TabIndex = 1;
@@ -205,7 +205,7 @@ namespace Gym_Management_System
             // 
             this.textBoxNIC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxNIC.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNIC.Location = new System.Drawing.Point(327, 201);
+            this.textBoxNIC.Location = new System.Drawing.Point(327, 204);
             this.textBoxNIC.Name = "textBoxNIC";
             this.textBoxNIC.Size = new System.Drawing.Size(252, 38);
             this.textBoxNIC.TabIndex = 1;
@@ -216,7 +216,7 @@ namespace Gym_Management_System
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label12.Location = new System.Drawing.Point(30, 188);
+            this.label12.Location = new System.Drawing.Point(30, 191);
             this.label12.Margin = new System.Windows.Forms.Padding(30, 0, 3, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(269, 64);
@@ -266,7 +266,7 @@ namespace Gym_Management_System
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(328, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(328, 19);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(250, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -281,13 +281,13 @@ namespace Gym_Management_System
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(302, 183);
+            this.panel1.Size = new System.Drawing.Size(302, 189);
             this.panel1.TabIndex = 7;
             // 
             // textbox_Members_Id
             // 
             this.textbox_Members_Id.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_Members_Id.Location = new System.Drawing.Point(55, 117);
+            this.textbox_Members_Id.Location = new System.Drawing.Point(55, 120);
             this.textbox_Members_Id.Name = "textbox_Members_Id";
             this.textbox_Members_Id.Size = new System.Drawing.Size(135, 38);
             this.textbox_Members_Id.TabIndex = 2;
@@ -469,6 +469,39 @@ namespace Gym_Management_System
             this.label4.Text = "Mobile Number Public :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(328, 188);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(252, 38);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label9.Location = new System.Drawing.Point(20, 469);
+            this.label9.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(280, 64);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Professional Qualifications:";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // richTextBoxHealthCondition
+            // 
+            this.richTextBoxHealthCondition.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.richTextBoxHealthCondition.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxHealthCondition.Location = new System.Drawing.Point(329, 455);
+            this.richTextBoxHealthCondition.Name = "richTextBoxHealthCondition";
+            this.richTextBoxHealthCondition.Size = new System.Drawing.Size(250, 91);
+            this.richTextBoxHealthCondition.TabIndex = 2;
+            this.richTextBoxHealthCondition.Text = "";
+            // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -543,39 +576,6 @@ namespace Gym_Management_System
             this.btnDelete.TabIndex = 0;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(328, 188);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 38);
-            this.textBox1.TabIndex = 1;
-            // 
-            // richTextBoxHealthCondition
-            // 
-            this.richTextBoxHealthCondition.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.richTextBoxHealthCondition.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxHealthCondition.Location = new System.Drawing.Point(329, 455);
-            this.richTextBoxHealthCondition.Name = "richTextBoxHealthCondition";
-            this.richTextBoxHealthCondition.Size = new System.Drawing.Size(250, 91);
-            this.richTextBoxHealthCondition.TabIndex = 2;
-            this.richTextBoxHealthCondition.Text = "";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label9.Location = new System.Drawing.Point(20, 469);
-            this.label9.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(280, 64);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Professional Qualifications:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ModifyStaff
             // 
