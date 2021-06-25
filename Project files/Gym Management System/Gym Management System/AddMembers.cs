@@ -80,6 +80,7 @@ namespace Gym_Management_System
             dB_Connection.InsertData(insertqry);
 
             string qrimgpath = Application.StartupPath.Substring(0, Application.StartupPath.Length - 10) + "\\Images\\Member QR\\" + mem_id +"memQR.jpg";
+            Console.WriteLine(qrimgpath);
             string qrsubject =(mem_id+NIC+name).ToString();
             QRmailSender qRmailSender = new QRmailSender();
             qRmailSender.qrgen(qrsubject,qrimgpath);

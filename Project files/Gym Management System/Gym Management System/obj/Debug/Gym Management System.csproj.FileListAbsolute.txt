@@ -86,3 +86,48 @@ E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Workoutplans.resources
 E:\GMS\Project files\Gym Management System\Gym Management System\bin\Debug\QRCoder.dll
 E:\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csprojAssemblyReference.cache
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\bin\Debug\Gym Management System.exe.config
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\bin\Debug\Gym Management System.exe
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\bin\Debug\Gym Management System.pdb
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\bin\Debug\QRCoder.dll
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csprojAssemblyReference.cache
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.AddEquipments.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.AddFees.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.AddInstructions.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.AddMembers.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.AddPackages.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Addstaff.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Add_mem_image_D_Box.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Dashboard.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Equipments.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Equipments_DBView.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Find_Body_type.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Ft_login_form.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.ft_login_form2.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.ft_wrapper.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.GMS_1v.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Instructions.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.lgtest.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.lgtest2.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Login.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.LoginForm.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Members.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Members_db_view.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Member_view_dialogbox.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Modifyequipments.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.ModifyStaff.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Modify_members.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Payments.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Payment_Due.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Preloader.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Properties.Resources.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Ft_login_form1.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Staff.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Staff_DB_view.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Workoutplans.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csproj.GenerateResource.cache
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csproj.CoreCompileInputs.cache
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.csproj.CopyComplete
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.exe
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym Management System.pdb
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Add_equip_picture_D_Box.resources

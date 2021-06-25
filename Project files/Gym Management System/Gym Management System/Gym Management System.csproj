@@ -97,6 +97,12 @@
     <Compile Include="Addstaff.Designer.cs">
       <DependentUpon>Addstaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_equip_picture_D_Box.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_equip_picture_D_Box.Designer.cs">
+      <DependentUpon>Add_equip_picture_D_Box.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_mem_image_D_Box.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -280,6 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Addstaff.resx">
       <DependentUpon>Addstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_equip_picture_D_Box.resx">
+      <DependentUpon>Add_equip_picture_D_Box.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_mem_image_D_Box.resx">
       <DependentUpon>Add_mem_image_D_Box.cs</DependentUpon>
