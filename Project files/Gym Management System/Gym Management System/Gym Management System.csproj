@@ -263,6 +263,12 @@
     <Compile Include="Staff.Designer.cs">
       <DependentUpon>Staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Staffmemeber_View_DialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staffmemeber_View_DialogBox.Designer.cs">
+      <DependentUpon>Staffmemeber_View_DialogBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Staff_DB_view.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -383,6 +389,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staff.resx">
       <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staffmemeber_View_DialogBox.resx">
+      <DependentUpon>Staffmemeber_View_DialogBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff_DB_view.resx">
       <DependentUpon>Staff_DB_view.cs</DependentUpon>
