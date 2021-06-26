@@ -44,8 +44,6 @@ namespace Gym_Management_System
             this.memEmail_tb = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textbox_Members_Id = new System.Windows.Forms.TextBox();
-            this.labelMID = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -66,6 +64,7 @@ namespace Gym_Management_System
             this.btn_update = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -275,35 +274,13 @@ namespace Gym_Management_System
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textbox_Members_Id);
-            this.panel1.Controls.Add(this.labelMID);
+            this.panel1.Controls.Add(this.tableLayoutPanel6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(302, 189);
             this.panel1.TabIndex = 7;
-            // 
-            // textbox_Members_Id
-            // 
-            this.textbox_Members_Id.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_Members_Id.Location = new System.Drawing.Point(55, 120);
-            this.textbox_Members_Id.Name = "textbox_Members_Id";
-            this.textbox_Members_Id.Size = new System.Drawing.Size(135, 38);
-            this.textbox_Members_Id.TabIndex = 2;
-            // 
-            // labelMID
-            // 
-            this.labelMID.AutoSize = true;
-            this.labelMID.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.labelMID.Location = new System.Drawing.Point(49, 82);
-            this.labelMID.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
-            this.labelMID.Name = "labelMID";
-            this.labelMID.Size = new System.Drawing.Size(112, 32);
-            this.labelMID.TabIndex = 1;
-            this.labelMID.Text = "Staff ID  :";
-            this.labelMID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
@@ -577,6 +554,20 @@ namespace Gym_Management_System
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
             // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(57, 41);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 2;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel6.TabIndex = 0;
+
+            // 
             // ModifyStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -592,7 +583,6 @@ namespace Gym_Management_System
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -617,8 +607,6 @@ namespace Gym_Management_System
         private System.Windows.Forms.TextBox memEmail_tb;
         public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textbox_Members_Id;
-        private System.Windows.Forms.Label labelMID;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textboxEmergencyContactPhoneNumber;
@@ -639,5 +627,6 @@ namespace Gym_Management_System
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RichTextBox richTextBoxHealthCondition;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
     }
 }
