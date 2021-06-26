@@ -135,6 +135,9 @@ E:\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_M
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Add_equip_picture_D_Box.resources
 F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Equipment_View_dialoguebox.resources
 E:\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Equipment_View_dialoguebox.resources
+<<<<<<< Updated upstream
 E:\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Staffmemeber_View_DialogBox.resources
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Equipment_View_dialoguebox.resources
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Staffmemeber_View_DialogBox.resources
+=======
+>>>>>>> Stashed changes
