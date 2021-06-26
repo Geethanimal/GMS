@@ -29,18 +29,18 @@ namespace Gym_Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView_Members = new System.Windows.Forms.DataGridView();
+            this.dataGridView_Staff = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Members)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Staff)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -48,7 +48,7 @@ namespace Gym_Management_System
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView_Members, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dataGridView_Staff, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -112,58 +112,59 @@ namespace Gym_Management_System
             this.button1.TabIndex = 2;
             this.button1.Text = "Find";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView_Members
+            // dataGridView_Staff
             // 
-            this.dataGridView_Members.AllowUserToAddRows = false;
-            this.dataGridView_Members.AllowUserToDeleteRows = false;
-            this.dataGridView_Members.AllowUserToResizeColumns = false;
-            this.dataGridView_Members.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView_Members.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView_Members.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView_Members.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView_Members.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.dataGridView_Members.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView_Members.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView_Members.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            this.dataGridView_Members.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Members.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView_Members.ColumnHeadersHeight = 50;
-            this.dataGridView_Members.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dataGridView_Members.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView_Members.EnableHeadersVisualStyles = false;
-            this.dataGridView_Members.GridColor = System.Drawing.Color.Silver;
-            this.dataGridView_Members.Location = new System.Drawing.Point(0, 67);
-            this.dataGridView_Members.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView_Members.Name = "dataGridView_Members";
-            this.dataGridView_Members.ReadOnly = true;
-            this.dataGridView_Members.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView_Members.RowHeadersVisible = false;
-            this.dataGridView_Members.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(59)))), ((int)(((byte)(79)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.dataGridView_Members.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView_Members.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
-            this.dataGridView_Members.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView_Members.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
-            this.dataGridView_Members.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(59)))), ((int)(((byte)(79)))));
-            this.dataGridView_Members.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView_Members.RowTemplate.Height = 24;
-            this.dataGridView_Members.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_Members.Size = new System.Drawing.Size(1211, 613);
-            this.dataGridView_Members.TabIndex = 1;
+            this.dataGridView_Staff.AllowUserToAddRows = false;
+            this.dataGridView_Staff.AllowUserToDeleteRows = false;
+            this.dataGridView_Staff.AllowUserToResizeColumns = false;
+            this.dataGridView_Staff.AllowUserToResizeRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_Staff.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView_Staff.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView_Staff.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView_Staff.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.dataGridView_Staff.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_Staff.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView_Staff.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
+            this.dataGridView_Staff.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Staff.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView_Staff.ColumnHeadersHeight = 50;
+            this.dataGridView_Staff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dataGridView_Staff.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView_Staff.EnableHeadersVisualStyles = false;
+            this.dataGridView_Staff.GridColor = System.Drawing.Color.Silver;
+            this.dataGridView_Staff.Location = new System.Drawing.Point(0, 67);
+            this.dataGridView_Staff.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView_Staff.Name = "dataGridView_Staff";
+            this.dataGridView_Staff.ReadOnly = true;
+            this.dataGridView_Staff.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView_Staff.RowHeadersVisible = false;
+            this.dataGridView_Staff.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(59)))), ((int)(((byte)(79)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.dataGridView_Staff.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView_Staff.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
+            this.dataGridView_Staff.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_Staff.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridView_Staff.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(59)))), ((int)(((byte)(79)))));
+            this.dataGridView_Staff.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView_Staff.RowTemplate.Height = 24;
+            this.dataGridView_Staff.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_Staff.Size = new System.Drawing.Size(1211, 613);
+            this.dataGridView_Staff.TabIndex = 1;
             // 
             // Staff_DB_view
             // 
@@ -176,7 +177,7 @@ namespace Gym_Management_System
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Members)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Staff)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -188,6 +189,6 @@ namespace Gym_Management_System
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView_Members;
+        private System.Windows.Forms.DataGridView dataGridView_Staff;
     }
 }
