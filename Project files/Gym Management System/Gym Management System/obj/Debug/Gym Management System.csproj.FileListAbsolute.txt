@@ -133,3 +133,4 @@ F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\D
 F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Add_equip_picture_D_Box.resources
 E:\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Add_equip_picture_D_Box.resources
 E:\NSBM\OneDrive - National School of Busness Management\Projects\C#\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Add_equip_picture_D_Box.resources
+F:\Documents\GMS\Project files\Gym Management System\Gym Management System\obj\Debug\Gym_Management_System.Equipment_View_dialoguebox.resources

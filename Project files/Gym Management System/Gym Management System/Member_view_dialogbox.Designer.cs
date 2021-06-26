@@ -30,17 +30,6 @@ namespace Gym_Management_System
         private void InitializeComponent()
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.lbl_mnum_v = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lbl_a_v = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbl_mn_v = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbl_nod_v = new System.Windows.Forms.Label();
-            this.lbl_member_id = new System.Windows.Forms.Label();
-            this.lbl_mid_v = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_hc_v = new System.Windows.Forms.Label();
             this.lbl_bt_v = new System.Windows.Forms.Label();
@@ -53,13 +42,24 @@ namespace Gym_Management_System
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.member_dp_picturebox = new System.Windows.Forms.PictureBox();
             this.member_qr_picturebox = new System.Windows.Forms.PictureBox();
+            this.member_dp_picturebox = new System.Windows.Forms.PictureBox();
+            this.lbl_mid_v = new System.Windows.Forms.Label();
+            this.lbl_member_id = new System.Windows.Forms.Label();
+            this.lbl_nod_v = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_mn_v = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_a_v = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lbl_mnum_v = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.member_dp_picturebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.member_qr_picturebox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.member_dp_picturebox)).BeginInit();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -77,157 +77,6 @@ namespace Gym_Management_System
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1000, 585);
             this.tableLayoutPanel2.TabIndex = 1;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.label13, 0, 5);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_mnum_v, 1, 5);
-            this.tableLayoutPanel4.Controls.Add(this.label9, 0, 4);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_a_v, 1, 4);
-            this.tableLayoutPanel4.Controls.Add(this.label3, 0, 3);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_mn_v, 1, 3);
-            this.tableLayoutPanel4.Controls.Add(this.label1, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_nod_v, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_member_id, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.lbl_mid_v, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.member_dp_picturebox, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.member_qr_picturebox, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 6;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.45454F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(500, 585);
-            this.tableLayoutPanel4.TabIndex = 0;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(20, 546);
-            this.label13.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(130, 23);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Mobile Number";
-            // 
-            // lbl_mnum_v
-            // 
-            this.lbl_mnum_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbl_mnum_v.AutoSize = true;
-            this.lbl_mnum_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_mnum_v.Location = new System.Drawing.Point(265, 546);
-            this.lbl_mnum_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
-            this.lbl_mnum_v.Name = "lbl_mnum_v";
-            this.lbl_mnum_v.Size = new System.Drawing.Size(80, 23);
-            this.lbl_mnum_v.TabIndex = 0;
-            this.lbl_mnum_v.Text = "__________";
-            // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(20, 465);
-            this.label9.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 23);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Address";
-            // 
-            // lbl_a_v
-            // 
-            this.lbl_a_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbl_a_v.AutoSize = true;
-            this.lbl_a_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_a_v.Location = new System.Drawing.Point(265, 465);
-            this.lbl_a_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
-            this.lbl_a_v.Name = "lbl_a_v";
-            this.lbl_a_v.Size = new System.Drawing.Size(80, 23);
-            this.lbl_a_v.TabIndex = 0;
-            this.lbl_a_v.Text = "__________";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 386);
-            this.label3.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 23);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Member Name";
-            // 
-            // lbl_mn_v
-            // 
-            this.lbl_mn_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbl_mn_v.AutoSize = true;
-            this.lbl_mn_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_mn_v.Location = new System.Drawing.Point(265, 386);
-            this.lbl_mn_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
-            this.lbl_mn_v.Name = "lbl_mn_v";
-            this.lbl_mn_v.Size = new System.Drawing.Size(80, 23);
-            this.lbl_mn_v.TabIndex = 0;
-            this.lbl_mn_v.Text = "__________";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 333);
-            this.label1.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "NIC or Driving License no";
-            // 
-            // lbl_nod_v
-            // 
-            this.lbl_nod_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbl_nod_v.AutoSize = true;
-            this.lbl_nod_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nod_v.Location = new System.Drawing.Point(265, 333);
-            this.lbl_nod_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
-            this.lbl_nod_v.Name = "lbl_nod_v";
-            this.lbl_nod_v.Size = new System.Drawing.Size(80, 23);
-            this.lbl_nod_v.TabIndex = 0;
-            this.lbl_nod_v.Text = "__________";
-            // 
-            // lbl_member_id
-            // 
-            this.lbl_member_id.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbl_member_id.AutoSize = true;
-            this.lbl_member_id.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_member_id.Location = new System.Drawing.Point(20, 280);
-            this.lbl_member_id.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.lbl_member_id.Name = "lbl_member_id";
-            this.lbl_member_id.Size = new System.Drawing.Size(94, 23);
-            this.lbl_member_id.TabIndex = 0;
-            this.lbl_member_id.Text = "Member Id";
-            // 
-            // lbl_mid_v
-            // 
-            this.lbl_mid_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbl_mid_v.AutoSize = true;
-            this.lbl_mid_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_mid_v.Location = new System.Drawing.Point(265, 280);
-            this.lbl_mid_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
-            this.lbl_mid_v.Name = "lbl_mid_v";
-            this.lbl_mid_v.Size = new System.Drawing.Size(80, 23);
-            this.lbl_mid_v.TabIndex = 0;
-            this.lbl_mid_v.Text = "__________";
             // 
             // tableLayoutPanel5
             // 
@@ -388,6 +237,16 @@ namespace Gym_Management_System
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1000, 65);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
+            // member_qr_picturebox
+            // 
+            this.member_qr_picturebox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.member_qr_picturebox.Location = new System.Drawing.Point(23, 32);
+            this.member_qr_picturebox.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.member_qr_picturebox.Name = "member_qr_picturebox";
+            this.member_qr_picturebox.Size = new System.Drawing.Size(200, 200);
+            this.member_qr_picturebox.TabIndex = 2;
+            this.member_qr_picturebox.TabStop = false;
+            // 
             // member_dp_picturebox
             // 
             this.member_dp_picturebox.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -398,15 +257,156 @@ namespace Gym_Management_System
             this.member_dp_picturebox.TabIndex = 1;
             this.member_dp_picturebox.TabStop = false;
             // 
-            // member_qr_picturebox
+            // lbl_mid_v
             // 
-            this.member_qr_picturebox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.member_qr_picturebox.Location = new System.Drawing.Point(23, 32);
-            this.member_qr_picturebox.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
-            this.member_qr_picturebox.Name = "member_qr_picturebox";
-            this.member_qr_picturebox.Size = new System.Drawing.Size(200, 200);
-            this.member_qr_picturebox.TabIndex = 2;
-            this.member_qr_picturebox.TabStop = false;
+            this.lbl_mid_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_mid_v.AutoSize = true;
+            this.lbl_mid_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_mid_v.Location = new System.Drawing.Point(265, 280);
+            this.lbl_mid_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
+            this.lbl_mid_v.Name = "lbl_mid_v";
+            this.lbl_mid_v.Size = new System.Drawing.Size(80, 23);
+            this.lbl_mid_v.TabIndex = 0;
+            this.lbl_mid_v.Text = "__________";
+            // 
+            // lbl_member_id
+            // 
+            this.lbl_member_id.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_member_id.AutoSize = true;
+            this.lbl_member_id.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_member_id.Location = new System.Drawing.Point(20, 280);
+            this.lbl_member_id.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.lbl_member_id.Name = "lbl_member_id";
+            this.lbl_member_id.Size = new System.Drawing.Size(94, 23);
+            this.lbl_member_id.TabIndex = 0;
+            this.lbl_member_id.Text = "Member Id";
+            // 
+            // lbl_nod_v
+            // 
+            this.lbl_nod_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_nod_v.AutoSize = true;
+            this.lbl_nod_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nod_v.Location = new System.Drawing.Point(265, 333);
+            this.lbl_nod_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
+            this.lbl_nod_v.Name = "lbl_nod_v";
+            this.lbl_nod_v.Size = new System.Drawing.Size(80, 23);
+            this.lbl_nod_v.TabIndex = 0;
+            this.lbl_nod_v.Text = "__________";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(20, 333);
+            this.label1.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(204, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "NIC or Driving License no";
+            // 
+            // lbl_mn_v
+            // 
+            this.lbl_mn_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_mn_v.AutoSize = true;
+            this.lbl_mn_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_mn_v.Location = new System.Drawing.Point(265, 386);
+            this.lbl_mn_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
+            this.lbl_mn_v.Name = "lbl_mn_v";
+            this.lbl_mn_v.Size = new System.Drawing.Size(80, 23);
+            this.lbl_mn_v.TabIndex = 0;
+            this.lbl_mn_v.Text = "__________";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(20, 386);
+            this.label3.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 23);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Member Name";
+            // 
+            // lbl_a_v
+            // 
+            this.lbl_a_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_a_v.AutoSize = true;
+            this.lbl_a_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_a_v.Location = new System.Drawing.Point(265, 465);
+            this.lbl_a_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
+            this.lbl_a_v.Name = "lbl_a_v";
+            this.lbl_a_v.Size = new System.Drawing.Size(80, 23);
+            this.lbl_a_v.TabIndex = 0;
+            this.lbl_a_v.Text = "__________";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(20, 465);
+            this.label9.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(70, 23);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Address";
+            // 
+            // lbl_mnum_v
+            // 
+            this.lbl_mnum_v.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_mnum_v.AutoSize = true;
+            this.lbl_mnum_v.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_mnum_v.Location = new System.Drawing.Point(265, 546);
+            this.lbl_mnum_v.Margin = new System.Windows.Forms.Padding(15, 0, 3, 0);
+            this.lbl_mnum_v.Name = "lbl_mnum_v";
+            this.lbl_mnum_v.Size = new System.Drawing.Size(80, 23);
+            this.lbl_mnum_v.TabIndex = 0;
+            this.lbl_mnum_v.Text = "__________";
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(20, 546);
+            this.label13.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(130, 23);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Mobile Number";
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.label13, 0, 5);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_mnum_v, 1, 5);
+            this.tableLayoutPanel4.Controls.Add(this.label9, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_a_v, 1, 4);
+            this.tableLayoutPanel4.Controls.Add(this.label3, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_mn_v, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.label1, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_nod_v, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_member_id, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_mid_v, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.member_dp_picturebox, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.member_qr_picturebox, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 6;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.45454F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(500, 585);
+            this.tableLayoutPanel4.TabIndex = 0;
             // 
             // Member_view_dialogbox
             // 
@@ -422,12 +422,12 @@ namespace Gym_Management_System
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Member_view_dialogbox";
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.member_dp_picturebox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.member_qr_picturebox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.member_dp_picturebox)).EndInit();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -435,12 +435,6 @@ namespace Gym_Management_System
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbl_member_id;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label15;
@@ -448,17 +442,23 @@ namespace Gym_Management_System
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        public System.Windows.Forms.Label lbl_mnum_v;
-        public System.Windows.Forms.Label lbl_a_v;
-        public System.Windows.Forms.Label lbl_mn_v;
-        public System.Windows.Forms.Label lbl_nod_v;
-        public System.Windows.Forms.Label lbl_mid_v;
         public System.Windows.Forms.Label lbl_hc_v;
         public System.Windows.Forms.Label lbl_ecnum_v;
         public System.Windows.Forms.Label lbl_ecn_v;
         public System.Windows.Forms.Label lbl_bt_v;
         public System.Windows.Forms.Label lbl_dob_v;
-        private System.Windows.Forms.PictureBox member_qr_picturebox;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label lbl_mnum_v;
+        private System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label lbl_a_v;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label lbl_mn_v;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label lbl_nod_v;
+        private System.Windows.Forms.Label lbl_member_id;
+        public System.Windows.Forms.Label lbl_mid_v;
         public System.Windows.Forms.PictureBox member_dp_picturebox;
+        private System.Windows.Forms.PictureBox member_qr_picturebox;
     }
 }
