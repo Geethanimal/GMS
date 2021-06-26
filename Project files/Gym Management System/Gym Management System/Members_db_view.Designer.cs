@@ -112,6 +112,7 @@ namespace Gym_Management_System
             this.button1.TabIndex = 2;
             this.button1.Text = "Find";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView_Members
             // 
@@ -176,7 +177,6 @@ namespace Gym_Management_System
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Members_db_view";
             this.Text = "Members_db_view";
-            this.Load += new System.EventHandler(this.Members_db_view_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

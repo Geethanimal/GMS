@@ -13,20 +13,19 @@ namespace Gym_Management_System
 
     public partial class Members_db_view : Form
     {
+        private string members_qry = "SELECT Id,NICorDL,MemberName,DOB,Gender,Body_Type,Address,Mobile_Number,Health_Condition,Emergency_Contact_Name,Emergency_Contact_Number,Email FROM Members";
         public Members_db_view()
         {
             InitializeComponent();
-        }
-        private void FillGridView()
-        {
-            string members_qry = "SELECT * FROM Members";
-            DB_Connection dB_Connection = new DB_Connection();
-            dataGridView_Members.DataSource = dB_Connection.getDataGrid(members_qry);
+            FillGridView(members_qry);
         }
 
-        private void Members_db_view_Load(object sender, EventArgs e)
+        private void FillGridView(string qry)
         {
-            FillGridView();
+            
+            DB_Connection dB_Connection = new DB_Connection();
+            dataGridView_Members.DataSource = dB_Connection.getDataGrid(qry);
+            
         }
 
         private void dataGridView_Members_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -48,6 +47,25 @@ namespace Gym_Management_System
             mv_d.lbl_bt_v.Text = dataGridView_Members.Rows[e.RowIndex].Cells["Body_Type"].Value.ToString();
             mv_d.lbl_hc_v.Text = dataGridView_Members.Rows[e.RowIndex].Cells["Health_Condition"].Value.ToString();
             mv_d.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int data_int;
+            string data_string = textBox1.Text;
+            try
+            {
+                data_int = int.Parse(data_string);
+            }
+            catch(FormatException ex)
+            {
+                data_int = 0;
+            }
+             
+
+            members_qry = "SELECT Id,NICorDL,MemberName,DOB,Gender,Body_Type,Address,Mobile_Number,Health_Condition,Emergency_Contact_Name,Emergency_Contact_Number,Email FROM Members where id='"+data_int+"' OR NICorDL='"+data_string+"' OR MemberName='"+data_string+"' OR Gender='"+data_string+"' OR Body_Type='"+data_string+"' OR Address='"+data_string+"' OR Mobile_Number='"+data_int+"' OR Emergency_Contact_Name='"+data_string+"' OR Emergency_Contact_Number='"+data_int+"' OR Email='"+data_string+"' ";
+            Console.WriteLine(members_qry);
+            FillGridView(members_qry);
         }
     }
 }
