@@ -18,7 +18,7 @@ namespace Gym_Management_System
     public partial class AddMembers : Form
     {
         public int mem_id;
-        public string mem_imgpath;
+        public string mem_imgpath,img_folder= "Member DP";
                        
         public AddMembers()
         {
@@ -48,6 +48,7 @@ namespace Gym_Management_System
         {
             Add_mem_image_D_Box dialogbox = new Add_mem_image_D_Box();
             dialogbox.id = mem_id;
+            dialogbox.img_folder = img_folder;
             dialogbox.ShowDialog();
             mem_imgpath = dialogbox.imgpath;
             if (dialogbox.btnmemaddclick == true)

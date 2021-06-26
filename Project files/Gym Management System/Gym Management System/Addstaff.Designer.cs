@@ -48,7 +48,6 @@ namespace Gym_Management_System
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePickerJoinedDate = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.label11 = new System.Windows.Forms.Label();
             this.txt_boxEmergencyContactPNo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_boxPN = new System.Windows.Forms.TextBox();
@@ -58,16 +57,17 @@ namespace Gym_Management_System
             this.txt_boxAddressLivg = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_boxPubN = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.txt_boxProQuli = new System.Windows.Forms.RichTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txt_boxGender = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txt_boxMail = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -362,20 +362,6 @@ namespace Gym_Management_System
             this.tableLayoutPanel5.Size = new System.Drawing.Size(606, 561);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
-            // label11
-            // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label11.Location = new System.Drawing.Point(20, 304);
-            this.label11.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(280, 64);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Emergency Contact Phone Number        :";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // txt_boxEmergencyContactPNo
             // 
             this.txt_boxEmergencyContactPNo.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -412,12 +398,12 @@ namespace Gym_Management_System
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label10.Location = new System.Drawing.Point(20, 230);
+            this.label10.Location = new System.Drawing.Point(20, 250);
             this.label10.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(280, 64);
+            this.label10.Size = new System.Drawing.Size(280, 23);
             this.label10.TabIndex = 0;
             this.label10.Text = "Emergency Contact Name         :";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -478,6 +464,16 @@ namespace Gym_Management_System
             this.txt_boxPubN.Size = new System.Drawing.Size(252, 38);
             this.txt_boxPubN.TabIndex = 1;
             // 
+            // txt_boxProQuli
+            // 
+            this.txt_boxProQuli.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_boxProQuli.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_boxProQuli.Location = new System.Drawing.Point(329, 376);
+            this.txt_boxProQuli.Name = "txt_boxProQuli";
+            this.txt_boxProQuli.Size = new System.Drawing.Size(250, 77);
+            this.txt_boxProQuli.TabIndex = 2;
+            this.txt_boxProQuli.Text = "";
+            // 
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -492,15 +488,65 @@ namespace Gym_Management_System
             this.label9.Text = "Professional Qualifications:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txt_boxProQuli
+            // label13
             // 
-            this.txt_boxProQuli.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_boxProQuli.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_boxProQuli.Location = new System.Drawing.Point(329, 376);
-            this.txt_boxProQuli.Name = "txt_boxProQuli";
-            this.txt_boxProQuli.Size = new System.Drawing.Size(250, 77);
-            this.txt_boxProQuli.TabIndex = 2;
-            this.txt_boxProQuli.Text = "";
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label13.Location = new System.Drawing.Point(30, 468);
+            this.label13.Margin = new System.Windows.Forms.Padding(30, 0, 3, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(270, 32);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Gender  :";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txt_boxGender
+            // 
+            this.txt_boxGender.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_boxGender.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_boxGender.Location = new System.Drawing.Point(328, 465);
+            this.txt_boxGender.Name = "txt_boxGender";
+            this.txt_boxGender.Size = new System.Drawing.Size(252, 38);
+            this.txt_boxGender.TabIndex = 1;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label15.Location = new System.Drawing.Point(30, 520);
+            this.label15.Margin = new System.Windows.Forms.Padding(30, 0, 3, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(270, 32);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Email      :";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txt_boxMail
+            // 
+            this.txt_boxMail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_boxMail.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_boxMail.Location = new System.Drawing.Point(328, 517);
+            this.txt_boxMail.Name = "txt_boxMail";
+            this.txt_boxMail.Size = new System.Drawing.Size(252, 38);
+            this.txt_boxMail.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.label11.Location = new System.Drawing.Point(20, 313);
+            this.label11.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(280, 46);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Emergency Contact Phone Number        :";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
@@ -561,52 +607,6 @@ namespace Gym_Management_System
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label13.Location = new System.Drawing.Point(30, 468);
-            this.label13.Margin = new System.Windows.Forms.Padding(30, 0, 3, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(270, 32);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Gender  :";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txt_boxGender
-            // 
-            this.txt_boxGender.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_boxGender.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_boxGender.Location = new System.Drawing.Point(328, 465);
-            this.txt_boxGender.Name = "txt_boxGender";
-            this.txt_boxGender.Size = new System.Drawing.Size(252, 38);
-            this.txt_boxGender.TabIndex = 1;
-            // 
-            // label15
-            // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label15.Location = new System.Drawing.Point(30, 520);
-            this.label15.Margin = new System.Windows.Forms.Padding(30, 0, 3, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(270, 32);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Email      :";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txt_boxMail
-            // 
-            this.txt_boxMail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_boxMail.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_boxMail.Location = new System.Drawing.Point(328, 517);
-            this.txt_boxMail.Name = "txt_boxMail";
-            this.txt_boxMail.Size = new System.Drawing.Size(252, 38);
-            this.txt_boxMail.TabIndex = 1;
             // 
             // Addstaff
             // 
