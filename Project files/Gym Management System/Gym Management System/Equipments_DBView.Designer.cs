@@ -139,6 +139,7 @@ namespace Gym_Management_System
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView_Equipments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView_Equipments.ColumnHeadersHeight = 50;
+            this.dataGridView_Equipments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView_Equipments.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataGridView_Equipments.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView_Equipments.EnableHeadersVisualStyles = false;
@@ -149,7 +150,7 @@ namespace Gym_Management_System
             this.dataGridView_Equipments.ReadOnly = true;
             this.dataGridView_Equipments.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView_Equipments.RowHeadersVisible = false;
-            this.dataGridView_Equipments.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridView_Equipments.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
@@ -165,6 +166,7 @@ namespace Gym_Management_System
             this.dataGridView_Equipments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_Equipments.Size = new System.Drawing.Size(1211, 613);
             this.dataGridView_Equipments.TabIndex = 1;
+            this.dataGridView_Equipments.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Equipments_CellContentClick);
             // 
             // Equipments_DBView
             // 

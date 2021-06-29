@@ -14,8 +14,7 @@ namespace Gym_Management_System
     public partial class Addstaff : UserControl
     {
         public int staffmem_id;
-        public string staffmem_imgpath,img_folder= "Staff Member DP";
-        
+        public string staffmem_imgpath;
         public Addstaff()
         {
             InitializeComponent();
@@ -60,10 +59,9 @@ namespace Gym_Management_System
 
         private void pictureBoxstaff_Click(object sender, EventArgs e)
         {
-
             Add_mem_image_D_Box dialogbox = new Add_mem_image_D_Box();
-            dialogbox.img_folder = img_folder;
             dialogbox.id = staffmem_id;
+            dialogbox.file_Name = "Staff Member Dp";
             dialogbox.ShowDialog();
             staffmem_imgpath = dialogbox.imgpath;
             if (dialogbox.btnmemaddclick == true)
@@ -82,29 +80,30 @@ namespace Gym_Management_System
             string name = txt_boxName.Text;
             string Dob = dateTimePickerDOB.Text;
             string joinDte = dateTimePickerJoinedDate.Text;
-            string jobTyp = txt_boxJobtype.Text;
+            string jobType = txt_boxJobtype.Text;
             string homeAdrss = txt_boxHomeAddress.Text;
             string Adrs_Lvg = txt_boxAddressLivg.Text;
             string PrivtNo = txt_boxPN.Text;
             string PubNo = txt_boxPubN.Text;
             string EmergConName = txt_boxEmergencyContactNme.Text;
-            string EmergConNo = txt_boxEmergencyContactPNo.Text;
+            string EmergConNo = (txt_boxEmergencyContactPNo.Text);
             string ProQuli = txt_boxProQuli.Text;
             string Gendr = txt_boxGender.Text;
             string Email = txt_boxMail.Text;
             string qrimgpath = Application.StartupPath.Substring(0, Application.StartupPath.Length - 10) + "\\Images\\Staff QR\\" + staffmem_id + "memQR.jpg";
+            string qrsubject = (staffmem_id + NIC_No + name).ToString();
 
             DB_Connection dB_Connection = new DB_Connection();
-            string insrtqry = "INSERT INTO Staff_Member(Capture_path,QR_img_path,NIC,Name,Gender,Email,Job_Type,Professional_qualifications,Address_Living,Mobile_no_public,Mobile_no_private,Home_Address,Emergency_Contact_Name,Emergency_Contact_Number) VALUES('"+ staffmem_imgpath + "','"+ qrimgpath + "','" + NIC_No + "','" + name + "','" + Gendr + "','" + Email + "','" + jobTyp + "','" + ProQuli + "','" + Adrs_Lvg + "','" + PubNo + "','" + PrivtNo + "','" + homeAdrss + "','" + EmergConName + "','" + EmergConNo + "')";
+            string insrtqry = "INSERT INTO Staff_Member (Capture_path,QR_img_path,NIC,Name,Gender,Job_Type,Professional_qualifications,Address_Living,Mobile_no_public,Mobile_no_private,Home_Address,Emergency_Contact_Name,Emergency_Contact_Number,Email) VALUES('"+staffmem_imgpath+"','"+NIC_No+"','"+name+"','"+Gendr+"','"+jobType+"','"+ProQuli+"','"+Adrs_Lvg+"','"+PubNo+"','"+PrivtNo+"','"+homeAdrss+"','"+EmergConName+"','"+EmergConNo+"','"+Email+"' )";
             Console.WriteLine(insrtqry);
             dB_Connection.InsertData(insrtqry);
 
-           
-            string qrsubject = (staffmem_id + NIC_No + name).ToString();
-            QRmailSender qRmailSender = new QRmailSender();
-            qRmailSender.qrgen(qrsubject, qrimgpath);
-            qRmailSender.Emailgen(name, type);
-            qRmailSender.Emailsend(Email, qrimgpath);
+                QRmailSender qRmailSender = new QRmailSender();
+                qRmailSender.qrgen(qrsubject, qrimgpath);
+                qRmailSender.Emailgen(name, type);
+                qRmailSender.Emailsend(Email, qrimgpath);
+
+            
         }
     }
 }

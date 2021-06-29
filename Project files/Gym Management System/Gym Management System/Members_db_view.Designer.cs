@@ -177,6 +177,7 @@ namespace Gym_Management_System
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Members_db_view";
             this.Text = "Members_db_view";
+            this.Load += new System.EventHandler(this.Members_db_view_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

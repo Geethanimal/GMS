@@ -170,18 +170,6 @@
     <Compile Include="Instructions.Designer.cs">
       <DependentUpon>Instructions.cs</DependentUpon>
     </Compile>
-    <Compile Include="lgtest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="lgtest.Designer.cs">
-      <DependentUpon>lgtest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="lgtest2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="lgtest2.Designer.cs">
-      <DependentUpon>lgtest2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -263,17 +251,17 @@
     <Compile Include="Staff.Designer.cs">
       <DependentUpon>Staff.cs</DependentUpon>
     </Compile>
-    <Compile Include="Staffmemeber_View_DialogBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Staffmemeber_View_DialogBox.Designer.cs">
-      <DependentUpon>Staffmemeber_View_DialogBox.cs</DependentUpon>
-    </Compile>
     <Compile Include="Staff_DB_view.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Staff_DB_view.Designer.cs">
       <DependentUpon>Staff_DB_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Member_View_dialogbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_Member_View_dialogbox.Designer.cs">
+      <DependentUpon>Staff_Member_View_dialogbox.cs</DependentUpon>
     </Compile>
     <Compile Include="Workoutplans.cs">
       <SubType>UserControl</SubType>
@@ -335,12 +323,6 @@
     <EmbeddedResource Include="Instructions.resx">
       <DependentUpon>Instructions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="lgtest.resx">
-      <DependentUpon>lgtest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="lgtest2.resx">
-      <DependentUpon>lgtest2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -390,11 +372,11 @@
     <EmbeddedResource Include="Staff.resx">
       <DependentUpon>Staff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Staffmemeber_View_DialogBox.resx">
-      <DependentUpon>Staffmemeber_View_DialogBox.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Staff_DB_view.resx">
       <DependentUpon>Staff_DB_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Member_View_dialogbox.resx">
+      <DependentUpon>Staff_Member_View_dialogbox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Workoutplans.resx">
       <DependentUpon>Workoutplans.cs</DependentUpon>

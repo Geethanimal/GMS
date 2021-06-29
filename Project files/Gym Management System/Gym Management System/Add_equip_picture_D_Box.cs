@@ -32,7 +32,7 @@ namespace Gym_Management_System
             try
             {
                 btnadd.Enabled = true;
-                ofd.Filter = "png files(*.png)|*.png|jpg files(*.jpg)|*.jpg|All Files(*.*)|*.*";
+                ofd.Filter = "jpg files(*.jpg)|*.jpg | png files(*.png)|*.png|All Files(*.*)|*.*";
 
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
@@ -53,13 +53,11 @@ namespace Gym_Management_System
         {
             try
             {
-                
-
                 if (ofd.CheckFileExists)
                 {
                     
                     string path = Application.StartupPath.Substring(0, Application.StartupPath.Length - 10);
-                    AddEquipments aq = new AddEquipments();
+                    
                     pictureBox1.Image.Save(path + @"\Images\Equipments\" + equipid + nameplus + ".jpg");
                     imgpath = path + @"\Images\Equipments\" + equipid + nameplus + ".jpg";
                     MessageBox.Show("Image added Successfully!");

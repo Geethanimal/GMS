@@ -18,7 +18,7 @@ namespace Gym_Management_System
     public partial class Add_mem_image_D_Box : Form
     {
         public int id;
-        public string imgpath, img_folder;
+        public string imgpath,file_Name;
         public bool btnmemaddclick;
         public Add_mem_image_D_Box()
         {
@@ -50,7 +50,7 @@ namespace Gym_Management_System
             try
             {
                 btn_add.Enabled = true;
-                ofd.Filter = "png files(*.png)|*.png|jpg files(*.jpg)|*.jpg|All Files(*.*)|*.*";
+                ofd.Filter = "jpg files(*.jpg)|*.jpg | png files(*.png)|*.png|All Files(*.*)|*.*";
 
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
@@ -58,6 +58,7 @@ namespace Gym_Management_System
                     string img_location = ofd.FileName.ToString();
                     text_box_img_path.Text = img_location;
                     pictureBox1.ImageLocation = text_box_img_path.Text;
+                   
                     
                 }
             } catch(Exception ex)
@@ -75,12 +76,14 @@ namespace Gym_Management_System
                
                 if (ofd.CheckFileExists)
                 {
+
+                    string path = Application.StartupPath.Substring(0, Application.StartupPath.Length - 10);
                     
-                    string path = Application.StartupPath.Substring(0, Application.StartupPath.Length-10);
-                    AddMembers am = new AddMembers();
-                    pictureBox1.Image.Save(path + @"\Images\"+ img_folder +"\\"+ id + ".jpg");
-                    imgpath =path + @"\Images\" + img_folder + "\\" + id + ".jpg";
+                    pictureBox1.Image.Save(path + @"\Images\"+file_Name+"\\" + id + ".jpg");
+                    imgpath =path + @"\Images\" + file_Name + "\\" + id + ".jpg";
+          
                     MessageBox.Show("Image added Successfully!");
+
                     if (VideoCaptureDevice != null)
                     {
                         VideoCaptureDevice.Stop();

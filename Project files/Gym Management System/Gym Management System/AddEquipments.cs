@@ -40,6 +40,61 @@ namespace Gym_Management_System
             }
 
         }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string name = txtequipname.Text;
+            string type = txtequiptype.Text;
+            string price = txtamount.Text;
+
+            DB_Connection dB_Connection = new DB_Connection();
+            string insertqry = "INSERT INTO Equipment (Equip_Name,Equip_Type,Equip_Amount,Equip_img1,Equip_img2,Equip_img3,Equip_img4) VALUES('" + name+ "','" + type + "','" + price + "','" + equip_imgpath1 + "','" + equip_imgpath2 + "','" + equip_imgpath3 + "','" + equip_imgpath4 + "')";
+            Console.WriteLine(insertqry);
+            dB_Connection.InsertData(insertqry);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txtequipname.Text = "";
+            txtequiptype.Text = "";
+            txtamount.Text = "";
+            equip_imgpath1 ="";
+            equip_imgpath2 = "";
+            equip_imgpath3 = "";
+            equip_imgpath4 = "";
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Add_equip_picture_D_Box add_Equip_Picture_dialogbox = new Add_equip_picture_D_Box();
+            add_Equip_Picture_dialogbox.equipid = equip_id;
+            add_Equip_Picture_dialogbox.nameplus = "_pic1";
+            add_Equip_Picture_dialogbox.ShowDialog();
+            equip_imgpath1 = add_Equip_Picture_dialogbox.imgpath;
+            
+                if (equip_imgpath1 != null)
+                {
+                    pictureBox1.Image = new Bitmap(equip_imgpath1);
+                }
+            
+
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Add_equip_picture_D_Box add_Equip_Picture_dialogbox = new Add_equip_picture_D_Box();
+            add_Equip_Picture_dialogbox.equipid = equip_id;
+            add_Equip_Picture_dialogbox.nameplus = "_pic2";
+            add_Equip_Picture_dialogbox.ShowDialog();
+            equip_imgpath2 = add_Equip_Picture_dialogbox.imgpath;
+            if (equip_imgpath2 != null)
+            {
+                pictureBox2.Image = new Bitmap(equip_imgpath2);
+            }
+
+        }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
@@ -69,62 +124,5 @@ namespace Gym_Management_System
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string name = txtequipname.Text;
-            string type = txtequiptype.Text;
-            string price = txtamount.Text;
-
-            DB_Connection dB_Connection = new DB_Connection();
-            string insertqry = "INSERT INTO Equipment (Equip_Name,Equip_Type,Equip_Amount,Equip_img1,Equip_img2,Equip_img3,Equip_img4) VALUES('" + name+ "','" + type + "','" + price + "','" + equip_imgpath1 + "','" + equip_imgpath2 + "','" + equip_imgpath3 + "','" + equip_imgpath4 + "')";
-            Console.WriteLine(insertqry);
-            dB_Connection.InsertData(insertqry);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            txtequipname.Text = "";
-            txtequiptype.Text = "";
-            txtamount.Text = "";
-            equip_imgpath1 ="";
-            equip_imgpath2 = "";
-            equip_imgpath3 = "";
-            equip_imgpath4 = "";
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            Add_equip_picture_D_Box add_Equip_Picture_dialogbox = new Add_equip_picture_D_Box();
-            add_Equip_Picture_dialogbox.equipid = equip_id;
-            add_Equip_Picture_dialogbox.nameplus = "_pic2";
-            add_Equip_Picture_dialogbox.ShowDialog();
-            equip_imgpath2 = add_Equip_Picture_dialogbox.imgpath;
-            if (equip_imgpath2 != null)
-            {
-                pictureBox2.Image = new Bitmap(equip_imgpath2);
-            }
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Add_equip_picture_D_Box add_Equip_Picture_dialogbox = new Add_equip_picture_D_Box();
-            add_Equip_Picture_dialogbox.equipid = equip_id;
-            add_Equip_Picture_dialogbox.nameplus = "_pic1";
-            add_Equip_Picture_dialogbox.ShowDialog();
-            equip_imgpath1 = add_Equip_Picture_dialogbox.imgpath;
-            
-                if (equip_imgpath1 != null)
-                {
-                    pictureBox1.Image = new Bitmap(equip_imgpath1);
-                }
-            
-
-
-        }
-
-        
-        
     }
 }

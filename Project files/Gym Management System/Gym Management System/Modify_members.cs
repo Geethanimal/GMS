@@ -16,7 +16,7 @@ namespace Gym_Management_System
     public partial class Modify_members : Form
     {
         public string Id;
-        private string namef, emailf,Member_dp_path;
+        private string Member_dp_path;
         public Modify_members()
         {
             InitializeComponent();
@@ -41,6 +41,10 @@ namespace Gym_Management_System
         {
             
             MessageBox.Show("Are you sure that you want to update this member ?");
+            string NIC_forqr = textBoxNIC.Text;
+            string Name_forqr = textboxName.Text;
+            string mail_db = memEmail_tb.Text;
+
             Id = textbox_Members_Id.Text;
             string NIC = textBoxNIC.Text;
             string name = textboxName.Text;
@@ -52,17 +56,21 @@ namespace Gym_Management_System
             string Health_Condition = richTextBoxHealthCondition.Text;
             string Emergency_Contact_Name = textboxEmergencyContactName.Text;
             string Emergency_Contact_Number = (textboxEmergencyContactPhoneNumber.Text);
-            
+            string qrimgpath = Application.StartupPath.Substring(0, Application.StartupPath.Length - 10) + "\\Images\\Member QR\\" + Id + "memQR.jpg";
+
             DB_Connection dB_Connection = new DB_Connection();
-            string query = "UPDATE Members SET NICorDL='"+NIC+"', MemberName='"+name+"' , Gender='"+Gender+"' , Body_Type='"+Body_Type+"' , Address='"+Address+"' , Mobile_Number='"+Mobile_Number+"' , Health_Condition='"+Health_Condition+"' , Emergency_Contact_Name='"+Emergency_Contact_Name+"' , Emergency_Contact_Number='"+Emergency_Contact_Number+ "', Member_dp='" + Member_dp_path + "' , Email = '" + Email + "' WHERE Id='" + Id+"'";
+            string query = "UPDATE Members SET NICorDL='"+NIC+"', MemberName='"+name+"' , Gender='"+Gender+"' , Body_Type='"+Body_Type+"' , Address='"+Address+"' , Mobile_Number='"+Mobile_Number+"' , Health_Condition='"+Health_Condition+"' , Emergency_Contact_Name='"+Emergency_Contact_Name+"' , Emergency_Contact_Number='"+Emergency_Contact_Number+ "', Member_dp='" + Member_dp_path + "' , Email = '" + Email + "' , QR_img_path='"+qrimgpath+"' WHERE Id='" + Id+"'";
             dB_Connection.update(query);
 
-            string qrimgpath = Application.StartupPath.Substring(0, Application.StartupPath.Length - 10) + "\\Images\\Member QR\\" + Id + "memQR.jpg";
-            string qrsubject = (Id.ToString() + NIC + name).ToString();
-            QRmailSender qRmailSender = new QRmailSender();
-            qRmailSender.qrgen(qrsubject, qrimgpath);
-            qRmailSender.Emailgen(namef, "member");
-            qRmailSender.Emailsend(emailf, qrimgpath);
+            
+            if (NIC_forqr != NIC || Name_forqr != name || Email != mail_db)
+            {
+                QRmailSender qRmailSender = new QRmailSender();
+                string qrsubject = (Id.ToString() + NIC + name).ToString();
+                qRmailSender.qrgen(qrsubject, qrimgpath);
+                qRmailSender.Emailgen(name, "member");
+                qRmailSender.Emailsend(Email, qrimgpath);
+            }
         }
 
         private void textbox_Members_Id_KeyDown(object sender, KeyEventArgs e)
@@ -74,6 +82,7 @@ namespace Gym_Management_System
                 {
                     try
                     {
+                        Id = textbox_Members_Id.Text;
                         int id = int.Parse(textbox_Members_Id.Text);
                         DB_Connection dB_Connection = new DB_Connection();
                         SqlConnection con = new SqlConnection(dB_Connection.connectionstring);
@@ -130,20 +139,31 @@ namespace Gym_Management_System
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Id = textbox_Members_Id.Text;
-            if (Id != "")
+            if (Id != null)
             {
-                Add_mem_image_D_Box add_Mem_Image_D_Box_update = new Add_mem_image_D_Box();
-                add_Mem_Image_D_Box_update.id = int.Parse(Id);
-                add_Mem_Image_D_Box_update.ShowDialog();
-                Member_dp_path = add_Mem_Image_D_Box_update.imgpath;
-                
+                Add_mem_image_D_Box dialogbox = new Add_mem_image_D_Box();
+                dialogbox.id = int.Parse(Id);
+                dialogbox.file_Name = "Member DP";
+                pictureBox1.Image.Dispose();
+                dialogbox.ShowDialog();
+                Member_dp_path = dialogbox.imgpath;
+                Console.WriteLine(Member_dp_path);
+
+                if (dialogbox.btnmemaddclick == true)
+                {
+                    if (Member_dp_path != null)
+                    {
+                        Console.WriteLine(Member_dp_path);
+                        pictureBox1.Image = new Bitmap(Member_dp_path);
+                    }
+                }
             }
             else
             {
-                MessageBox.Show("First you must Enter member Id !");
+                MessageBox.Show("Please Enter the Id number");
             }
             
+
         }
 
         

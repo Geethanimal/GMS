@@ -417,7 +417,6 @@ namespace Gym_Management_System
 
         #endregion
         private System.Windows.Forms.TextBox text_box_img_path;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -440,5 +439,6 @@ namespace Gym_Management_System
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

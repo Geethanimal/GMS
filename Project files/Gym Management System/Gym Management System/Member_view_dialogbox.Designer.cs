@@ -246,6 +246,7 @@ namespace Gym_Management_System
             this.member_qr_picturebox.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.member_qr_picturebox.Name = "member_qr_picturebox";
             this.member_qr_picturebox.Size = new System.Drawing.Size(200, 200);
+            this.member_qr_picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.member_qr_picturebox.TabIndex = 2;
             this.member_qr_picturebox.TabStop = false;
             // 
@@ -399,7 +400,7 @@ namespace Gym_Management_System
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 585);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -459,6 +460,6 @@ namespace Gym_Management_System
         private System.Windows.Forms.Label lbl_member_id;
         public System.Windows.Forms.Label lbl_mid_v;
         public System.Windows.Forms.PictureBox member_dp_picturebox;
-        private System.Windows.Forms.PictureBox member_qr_picturebox;
+        public System.Windows.Forms.PictureBox member_qr_picturebox;
     }
 }

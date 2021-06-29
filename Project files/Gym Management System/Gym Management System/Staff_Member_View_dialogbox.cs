@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace Gym_Management_System
 {
-    public partial class lgtest2 : Form
+    public partial class Staff_Member_View_dialogbox : Form
     {
-        public lgtest2()
+        public Staff_Member_View_dialogbox()
         {
             InitializeComponent();
         }
+
+        
     }
 }

@@ -8,54 +8,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net;
+using System.Net.Mail;
 
 namespace Gym_Management_System
 {
-
     public partial class ModifyStaff : UserControl
     {
-        public string stffId;
-        private string namef, emailf, stffMember_dp_path;
+        public string Id;
+        private string Staff_Member_dp_path,mail_db;
+
         public ModifyStaff()
         {
             InitializeComponent();
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Are you sure that you want to Delete this staff member details ?");
-            stffId = textbox_Staff_Id.Text;
-            DB_Connection dB_Connection = new DB_Connection();
-            string query = "DELETE FROM Members Where Id='" + stffId + "'";
-            dB_Connection.Delete(query);
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            stffId = textbox_Staff_Id.Text;
-            if (stffId != "")
-            {
-                Add_mem_image_D_Box add_Mem_Image_D_Box_update = new Add_mem_image_D_Box();
-                add_Mem_Image_D_Box_update.id = int.Parse(stffId);
-                add_Mem_Image_D_Box_update.ShowDialog();
-                stffMember_dp_path = add_Mem_Image_D_Box_update.imgpath;
-
-            }
-            else
-            {
-                MessageBox.Show("First you must Enter staff member Id !");
-            }
-        }
-
-        private void textbox_Staff_Id_KeyDown(object sender, KeyEventArgs e)
+        private void textbox_Members_Id_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (textbox_Staff_Id.Text != "")
+                if (textbox_Staff_Members_Id.Text != "")
                 {
                     try
                     {
-                        int id = int.Parse(textbox_Staff_Id.Text);
+                        Id = textbox_Staff_Members_Id.Text;
+                        int id = int.Parse(textbox_Staff_Members_Id.Text);
                         DB_Connection dB_Connection = new DB_Connection();
                         SqlConnection con = new SqlConnection(dB_Connection.connectionstring);
                         con.Open();
@@ -67,27 +44,35 @@ namespace Gym_Management_System
                         {
                             while (da.Read())
                             {
-
+                                
                                 textBoxNIC.Text = da.GetValue(3).ToString();
                                 textboxName.Text = da.GetValue(4).ToString();
-                                textboxjobType.Text = da.GetValue(5).ToString();
-                                txtbox_hmeaddrss.Text = da.GetValue(12).ToString();
-                                TextBoxAddressLiv.Text = da.GetValue(9).ToString();
-                                textboxMobileNumberPvt.Text = da.GetValue(11).ToString();
-                                textbox_MobNoPub.Text = da.GetValue(10).ToString();
-                                textboxEmergencyContactPhoneNumber.Text = da.GetValue(14).ToString();
-                                textboxEmergencyContactName.Text = da.GetValue(13).ToString();
-                                textbox_Prof_Quali.Text = da.GetValue(6).ToString();
-                                text_boxmail.Text = da.GetValue(15).ToString();
-                                text_boxgender.Text = da.GetValue(16).ToString();
-                                pictureBox1.Image = new Bitmap(da.GetValue(1).ToString());
-                                stffMember_dp_path = da.GetValue(17).ToString();
+                                textboxJobType.Text = da.GetValue(5).ToString();
+                                txt_boxProQuli.Text = da.GetValue(6).ToString();
+
+
+                                txt_boxAddressLivg.Text = da.GetValue(9).ToString();
+                                txt_boxPN_private.Text = da.GetValue(10).ToString();
+                                txt_boxPubN.Text = da.GetValue(11).ToString();
+                                home_Address_tb.Text = da.GetValue(12).ToString();
+                                txt_boxEmergencyContactNme.Text = da.GetValue(13).ToString();
+                                txt_boxEmergencyContactPNo.Text = da.GetValue(14).ToString();
+                                txt_boxMail.Text = da.GetValue(15).ToString();
+                                mail_db = da.GetValue(15).ToString();
+                                txt_boxGender.Text = da.GetValue(16).ToString();
+
+                                if (da.GetValue(1).ToString() != "")
+                                {
+                                    pictureBox1.Image = new Bitmap(da.GetValue(1).ToString());
+                                    Staff_Member_dp_path = da.GetValue(1).ToString();
+                                }
+
                             }
                             con.Close();
                         }
                         else
                         {
-                            MessageBox.Show("There is no Staff member by Id:" + id + "\nTry again with another Id");
+                            MessageBox.Show("There is no Staff Member by member id:" + id + "\nTry again with another Id");
                         }
                     }
                     catch (SqlException ex)
@@ -101,52 +86,99 @@ namespace Gym_Management_System
                 }
             }
         }
-
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btn_update_Click(object sender, EventArgs e)
         {
-            textbox_Staff_Id.Text = "";
-            textBoxNIC.Text = "";
-            textboxName.Text = "";
-            textboxjobType.Text = "";
-            txtbox_hmeaddrss.Text = "";
-            TextBoxAddressLiv.Text = "";
-            textboxMobileNumberPvt.Text = "";
-            textbox_MobNoPub.Text = "";
-            textboxEmergencyContactPhoneNumber.Text = "";
-            textboxEmergencyContactName.Text = "";
-            textbox_Prof_Quali.Text = "";
-            text_boxmail.Text = "";
-            text_boxgender.Text = "";
+            MessageBox.Show("Are you sure that you want to update this member ?");
+            Id = textbox_Staff_Members_Id.Text;
+            string NIC_forqr = textBoxNIC.Text;
+            string Name_forqr = textboxName.Text;
+            string NIC = textBoxNIC.Text;
+            string Name = textboxName.Text;
+            string JobType = textboxJobType.Text;
+            string p_qualifications = txt_boxProQuli.Text;
+
+
+            string Address_living = txt_boxAddressLivg.Text;
+            string PN_private = txt_boxPN_private.Text;
+            string PN_public = txt_boxPubN.Text;
+            string Home_Address = home_Address_tb.Text;
+            string EmergencyContactName = txt_boxEmergencyContactNme.Text;
+            string EmergencyContactPN = txt_boxEmergencyContactPNo.Text;
+            string Email = txt_boxMail.Text;
+            string Gender = txt_boxGender.Text;
+            string qrimgpath = Application.StartupPath.Substring(0, Application.StartupPath.Length - 10) + "\\Images\\Member QR\\" + Id + "memQR.jpg";
+
+            DB_Connection dB_Connection = new DB_Connection();
+            string query = "UPDATE Staff_Member SET Capture_path ='"+Staff_Member_dp_path+"', QR_img_path='"+qrimgpath+"', NIC = '" + NIC + "', Name = '" + Name + "' , Job_Type='" + JobType + "', Professional_qualifications='" + p_qualifications + "', Address_living='" + Address_living + "', Mobile_no_public='" + PN_public + "', Mobile_no_private='" + PN_private + "', Home_address='" + Email + "', Emergency_Contact_Name='" + EmergencyContactName + "', Emergency_Contact_Number='" + EmergencyContactPN + "', Email='" + Email + "', Gender='" + Gender + "' ";
+            dB_Connection.update(query);
+
+            QRmailSender qRmailSender = new QRmailSender();
+
+            if (NIC_forqr!=NIC || Name_forqr != Name || Email != mail_db )
+            {
+                string qrsubject = (Id.ToString() + NIC + Name).ToString();
+                
+                qRmailSender.qrgen(qrsubject, qrimgpath);
+                qRmailSender.Emailgen(Name, "member");
+                qRmailSender.Emailsend(Email, qrimgpath);
+            }
+            
+            
 
         }
 
-        private void btn_update_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Are you sure that you want to update this staff member ?");
-            stffId = textbox_Staff_Id.Text;
-            string NIC = textBoxNIC.Text;
-            string name = textboxName.Text;
-            string jobtype = textboxjobType.Text;
-            string homeaddress = txtbox_hmeaddrss.Text;
-            string AddressLiv = TextBoxAddressLiv.Text;
-            string MobileNopvt = textboxMobileNumberPvt.Text;
-            string MobileNopub = textbox_MobNoPub.Text;
-            string EmergConPhnNo = textboxEmergencyContactPhoneNumber.Text;
-            string EmergConName = textboxEmergencyContactName.Text;
-            string profQuali = textbox_Prof_Quali.Text;
-            string mail =text_boxmail.Text;
-            string gender = text_boxgender.Text;
-
+            MessageBox.Show("Are you sure that you want to Delete this member details ?");
+            Id = textbox_Staff_Members_Id.Text;
             DB_Connection dB_Connection = new DB_Connection();
-            string qry = "UPDATE Staff_Member SET  NIC='" + NIC + "', Name='" + name + "' , Gender='" + gender + "' , Job_Type='" + jobtype + "' , Professional_qualification='" + profQuali + "' , Address_living='" + AddressLiv + "' , Mobile_no_public='" + MobileNopub + "' , Mobile_no_private='" + MobileNopvt + "' , Home_Address='" +homeaddress + "',Emergency_Contact_Name='"+EmergConName+"',Emergency_Contact_Number='"+EmergConPhnNo+"', Member_dp='" + stffMember_dp_path + "' , Email = '" + mail + "' WHERE Id='" + stffId + "'";
-            dB_Connection.update(qry);
+            string query = "DELETE FROM Staff_Member Where Id='" + Id + "'";
+            dB_Connection.Delete(query);
+        }
 
-            string qrimgpath = Application.StartupPath.Substring(0, Application.StartupPath.Length - 10) + "\\Images\\Staff QR\\" + stffId + "memQR.jpg";
-            string qrsubject = (stffId.ToString() + NIC + name).ToString();
-            QRmailSender qRmailSender = new QRmailSender();
-            qRmailSender.qrgen(qrsubject, qrimgpath);
-            qRmailSender.Emailgen(namef, "member");
-            qRmailSender.Emailsend(emailf, qrimgpath);
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            textbox_Staff_Members_Id.Text = "";
+            textBoxNIC.Text = "";
+            textboxName.Text = "";
+            textboxJobType.Text = "";
+            txt_boxProQuli.Text = "";
+            txt_boxAddressLivg.Text = "";
+            txt_boxPN_private.Text = "";
+            txt_boxPubN.Text = "";
+            home_Address_tb.Text = "";
+            txt_boxEmergencyContactNme.Text = "";
+            txt_boxEmergencyContactPNo.Text = "";
+            txt_boxMail.Text = "";
+            txt_boxGender.Text = "";
+            string qrimgpath = "";
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (Id != null)
+            {
+                Add_mem_image_D_Box dialogbox = new Add_mem_image_D_Box();
+                dialogbox.id = int.Parse(Id);
+                dialogbox.file_Name = "Staff Member Dp";
+                pictureBox1.Image.Dispose();
+                dialogbox.ShowDialog();
+                Staff_Member_dp_path = dialogbox.imgpath;
+                Console.WriteLine(Staff_Member_dp_path);
+
+                if (dialogbox.btnmemaddclick == true)
+                {
+                    if (Staff_Member_dp_path != null)
+                    {
+                        pictureBox1.Image = new Bitmap(Staff_Member_dp_path);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please Enter the Id Number!");
+            }
+            
         }
     }
 }

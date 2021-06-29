@@ -13,19 +13,21 @@ namespace Gym_Management_System
 
     public partial class Members_db_view : Form
     {
-        private string members_qry = "SELECT Id,NICorDL,MemberName,DOB,Gender,Body_Type,Address,Mobile_Number,Health_Condition,Emergency_Contact_Name,Emergency_Contact_Number,Email FROM Members";
+        private string members_qry = "SELECT Id,NICorDL,MemberName,DOB,Gender,Body_Type,Address,Mobile_Number,Health_Condition,Emergency_Contact_Name,Emergency_Contact_Number,Member_dp,Email,QR_img_path FROM Members";
         public Members_db_view()
         {
             InitializeComponent();
-            FillGridView(members_qry);
         }
-
         private void FillGridView(string qry)
         {
-            
+            string members_qry = "SELECT * FROM Members";
             DB_Connection dB_Connection = new DB_Connection();
             dataGridView_Members.DataSource = dB_Connection.getDataGrid(qry);
-            
+        }
+
+        private void Members_db_view_Load(object sender, EventArgs e)
+        {
+            FillGridView(members_qry);
         }
 
         private void dataGridView_Members_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -35,6 +37,10 @@ namespace Gym_Management_System
             if (dataGridView_Members.Rows[e.RowIndex].Cells["Member_dp"].Value.ToString()!="")
             {
                 mv_d.member_dp_picturebox.Image = new Bitmap(dataGridView_Members.Rows[e.RowIndex].Cells["Member_dp"].Value.ToString());
+            }
+            if(dataGridView_Members.Rows[e.RowIndex].Cells["QR_img_path"].Value.ToString() != "")
+            {
+                mv_d.member_qr_picturebox.Image = new Bitmap(dataGridView_Members.Rows[e.RowIndex].Cells["QR_img_path"].Value.ToString());
             }
             mv_d.lbl_mid_v.Text = dataGridView_Members.Rows[e.RowIndex].Cells["Id"].Value.ToString();
             mv_d.lbl_nod_v.Text = dataGridView_Members.Rows[e.RowIndex].Cells["NICorDL"].Value.ToString();
@@ -51,19 +57,19 @@ namespace Gym_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int data_int;
             string data_string = textBox1.Text;
+            int data_int;
+
             try
             {
                 data_int = int.Parse(data_string);
             }
-            catch(FormatException ex)
+            catch (FormatException ex)
             {
                 data_int = 0;
             }
-             
 
-            members_qry = "SELECT Id,NICorDL,MemberName,DOB,Gender,Body_Type,Address,Mobile_Number,Health_Condition,Emergency_Contact_Name,Emergency_Contact_Number,Email FROM Members where id='"+data_int+"' OR NICorDL='"+data_string+"' OR MemberName='"+data_string+"' OR Gender='"+data_string+"' OR Body_Type='"+data_string+"' OR Address='"+data_string+"' OR Mobile_Number='"+data_int+"' OR Emergency_Contact_Name='"+data_string+"' OR Emergency_Contact_Number='"+data_int+"' OR Email='"+data_string+"' ";
+            members_qry = "SELECT Id,NICorDL,MemberName,DOB,Gender,Body_Type,Address,Mobile_Number,Health_Condition,Emergency_Contact_Name,Emergency_Contact_Number FROM Members WHERE Id='"+ data_int + "' OR NICorDL='"+data_string+"' OR MemberName='"+ data_string + "' OR Gender='"+ data_string + "' OR Body_Type='"+ data_string + "' OR Address='"+ data_string + "' OR Mobile_Number='"+ data_int + "' OR Health_Condition='"+ data_string + "' OR Emergency_Contact_Name='"+ data_string + "' OR Emergency_Contact_Number='"+data_int+"' ";
             Console.WriteLine(members_qry);
             FillGridView(members_qry);
         }

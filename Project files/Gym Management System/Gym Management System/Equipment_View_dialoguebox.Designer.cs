@@ -31,6 +31,10 @@ namespace Gym_Management_System
         {
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.equippicbox1 = new System.Windows.Forms.PictureBox();
+            this.equippicbox2 = new System.Windows.Forms.PictureBox();
+            this.equippicbox3 = new System.Windows.Forms.PictureBox();
+            this.equippicbox4 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.lblequipdate = new System.Windows.Forms.Label();
             this.lbl_epurchase = new System.Windows.Forms.Label();
@@ -42,16 +46,12 @@ namespace Gym_Management_System
             this.lbl_ename = new System.Windows.Forms.Label();
             this.lblequipid = new System.Windows.Forms.Label();
             this.lbl_eid = new System.Windows.Forms.Label();
-            this.equippicbox1 = new System.Windows.Forms.PictureBox();
-            this.equippicbox2 = new System.Windows.Forms.PictureBox();
-            this.equippicbox3 = new System.Windows.Forms.PictureBox();
-            this.equippicbox4 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.equippicbox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equippicbox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equippicbox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.equippicbox4)).BeginInit();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel3
@@ -89,6 +89,50 @@ namespace Gym_Management_System
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(500, 585);
             this.tableLayoutPanel5.TabIndex = 4;
+            // 
+            // equippicbox1
+            // 
+            this.equippicbox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.equippicbox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.equippicbox1.Location = new System.Drawing.Point(3, 21);
+            this.equippicbox1.Name = "equippicbox1";
+            this.equippicbox1.Size = new System.Drawing.Size(244, 250);
+            this.equippicbox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.equippicbox1.TabIndex = 0;
+            this.equippicbox1.TabStop = false;
+            // 
+            // equippicbox2
+            // 
+            this.equippicbox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.equippicbox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.equippicbox2.Location = new System.Drawing.Point(253, 21);
+            this.equippicbox2.Name = "equippicbox2";
+            this.equippicbox2.Size = new System.Drawing.Size(244, 250);
+            this.equippicbox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.equippicbox2.TabIndex = 1;
+            this.equippicbox2.TabStop = false;
+            // 
+            // equippicbox3
+            // 
+            this.equippicbox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.equippicbox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.equippicbox3.Location = new System.Drawing.Point(3, 313);
+            this.equippicbox3.Name = "equippicbox3";
+            this.equippicbox3.Size = new System.Drawing.Size(244, 250);
+            this.equippicbox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.equippicbox3.TabIndex = 2;
+            this.equippicbox3.TabStop = false;
+            // 
+            // equippicbox4
+            // 
+            this.equippicbox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.equippicbox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.equippicbox4.Location = new System.Drawing.Point(253, 313);
+            this.equippicbox4.Name = "equippicbox4";
+            this.equippicbox4.Size = new System.Drawing.Size(244, 250);
+            this.equippicbox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.equippicbox4.TabIndex = 3;
+            this.equippicbox4.TabStop = false;
             // 
             // tableLayoutPanel4
             // 
@@ -249,50 +293,6 @@ namespace Gym_Management_System
             this.lbl_eid.TabIndex = 0;
             this.lbl_eid.Text = "__________";
             // 
-            // equippicbox1
-            // 
-            this.equippicbox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.equippicbox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.equippicbox1.Location = new System.Drawing.Point(3, 21);
-            this.equippicbox1.Name = "equippicbox1";
-            this.equippicbox1.Size = new System.Drawing.Size(244, 250);
-            this.equippicbox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.equippicbox1.TabIndex = 0;
-            this.equippicbox1.TabStop = false;
-            // 
-            // equippicbox2
-            // 
-            this.equippicbox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.equippicbox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.equippicbox2.Location = new System.Drawing.Point(253, 21);
-            this.equippicbox2.Name = "equippicbox2";
-            this.equippicbox2.Size = new System.Drawing.Size(244, 250);
-            this.equippicbox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.equippicbox2.TabIndex = 1;
-            this.equippicbox2.TabStop = false;
-            // 
-            // equippicbox3
-            // 
-            this.equippicbox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.equippicbox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.equippicbox3.Location = new System.Drawing.Point(3, 313);
-            this.equippicbox3.Name = "equippicbox3";
-            this.equippicbox3.Size = new System.Drawing.Size(244, 250);
-            this.equippicbox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.equippicbox3.TabIndex = 2;
-            this.equippicbox3.TabStop = false;
-            // 
-            // equippicbox4
-            // 
-            this.equippicbox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.equippicbox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.equippicbox4.Location = new System.Drawing.Point(253, 313);
-            this.equippicbox4.Name = "equippicbox4";
-            this.equippicbox4.Size = new System.Drawing.Size(244, 250);
-            this.equippicbox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.equippicbox4.TabIndex = 3;
-            this.equippicbox4.TabStop = false;
-            // 
             // Equipment_View_dialoguebox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -305,12 +305,12 @@ namespace Gym_Management_System
             this.Name = "Equipment_View_dialoguebox";
             this.Text = "Equipment_View_DialogueBox";
             this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.equippicbox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.equippicbox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.equippicbox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.equippicbox4)).EndInit();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -330,9 +330,9 @@ namespace Gym_Management_System
         public System.Windows.Forms.Label lbl_ename;
         private System.Windows.Forms.Label lblequipid;
         public System.Windows.Forms.Label lbl_eid;
-        private System.Windows.Forms.PictureBox equippicbox1;
-        private System.Windows.Forms.PictureBox equippicbox2;
-        private System.Windows.Forms.PictureBox equippicbox3;
-        private System.Windows.Forms.PictureBox equippicbox4;
+        public System.Windows.Forms.PictureBox equippicbox1;
+        public System.Windows.Forms.PictureBox equippicbox2;
+        public System.Windows.Forms.PictureBox equippicbox3;
+        public System.Windows.Forms.PictureBox equippicbox4;
     }
 }
