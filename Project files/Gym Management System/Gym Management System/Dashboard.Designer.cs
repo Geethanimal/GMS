@@ -29,9 +29,6 @@ namespace Gym_Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.D_panel_calander = new System.Windows.Forms.Panel();
@@ -42,13 +39,28 @@ namespace Gym_Management_System
             this.D_panel_members = new System.Windows.Forms.Panel();
             this.D_panel_equipments = new System.Windows.Forms.Panel();
             this.D_panel_RE = new System.Windows.Forms.Panel();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.D_panel_calander.SuspendLayout();
+            this.D_panel_facilities.SuspendLayout();
+            this.D_panel_staff.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.D_panel_members.SuspendLayout();
+            this.D_panel_equipments.SuspendLayout();
             this.D_panel_RE.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -65,7 +77,7 @@ namespace Gym_Management_System
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1422, 994);
-            this.tableLayoutPanel1.TabIndex = 1;
+            this.tableLayoutPanel1.TabIndex = 2;
             // 
             // tableLayoutPanel2
             // 
@@ -88,6 +100,7 @@ namespace Gym_Management_System
             // D_panel_calander
             // 
             this.D_panel_calander.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.D_panel_calander.Controls.Add(this.pictureBox1);
             this.D_panel_calander.Dock = System.Windows.Forms.DockStyle.Fill;
             this.D_panel_calander.Location = new System.Drawing.Point(7, 12);
             this.D_panel_calander.Margin = new System.Windows.Forms.Padding(7, 12, 7, 4);
@@ -98,6 +111,7 @@ namespace Gym_Management_System
             // D_panel_facilities
             // 
             this.D_panel_facilities.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.D_panel_facilities.Controls.Add(this.pictureBox2);
             this.D_panel_facilities.Dock = System.Windows.Forms.DockStyle.Fill;
             this.D_panel_facilities.Location = new System.Drawing.Point(714, 12);
             this.D_panel_facilities.Margin = new System.Windows.Forms.Padding(7, 12, 7, 4);
@@ -108,6 +122,7 @@ namespace Gym_Management_System
             // D_panel_staff
             // 
             this.D_panel_staff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.D_panel_staff.Controls.Add(this.pictureBox3);
             this.D_panel_staff.Dock = System.Windows.Forms.DockStyle.Fill;
             this.D_panel_staff.Location = new System.Drawing.Point(1138, 12);
             this.D_panel_staff.Margin = new System.Windows.Forms.Padding(7, 12, 7, 4);
@@ -150,6 +165,7 @@ namespace Gym_Management_System
             // D_panel_members
             // 
             this.D_panel_members.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.D_panel_members.Controls.Add(this.pictureBox5);
             this.D_panel_members.Dock = System.Windows.Forms.DockStyle.Fill;
             this.D_panel_members.Location = new System.Drawing.Point(4, 4);
             this.D_panel_members.Margin = new System.Windows.Forms.Padding(4, 4, 4, 10);
@@ -160,6 +176,7 @@ namespace Gym_Management_System
             // D_panel_equipments
             // 
             this.D_panel_equipments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.D_panel_equipments.Controls.Add(this.pictureBox6);
             this.D_panel_equipments.Dock = System.Windows.Forms.DockStyle.Fill;
             this.D_panel_equipments.Location = new System.Drawing.Point(4, 328);
             this.D_panel_equipments.Margin = new System.Windows.Forms.Padding(4, 10, 4, 12);
@@ -170,7 +187,7 @@ namespace Gym_Management_System
             // D_panel_RE
             // 
             this.D_panel_RE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.D_panel_RE.Controls.Add(this.chart1);
+            this.D_panel_RE.Controls.Add(this.pictureBox4);
             this.D_panel_RE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.D_panel_RE.Location = new System.Drawing.Point(7, 6);
             this.D_panel_RE.Margin = new System.Windows.Forms.Padding(7, 6, 4, 12);
@@ -178,25 +195,77 @@ namespace Gym_Management_System
             this.D_panel_RE.Size = new System.Drawing.Size(413, 521);
             this.D_panel_RE.TabIndex = 1;
             // 
-            // chart1
+            // pictureBox1
             // 
-            this.chart1.BackColor = System.Drawing.Color.Transparent;
-            this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 0);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(413, 521);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Gym_Management_System.Properties.Resources.Calander_;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(693, 423);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::Gym_Management_System.Properties.Resources.Facilities;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(410, 423);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = global::Gym_Management_System.Properties.Resources.Staff;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(269, 423);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Image = global::Gym_Management_System.Properties.Resources.members;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(974, 304);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Image = global::Gym_Management_System.Properties.Resources.Equipments;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(974, 191);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 0;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = global::Gym_Management_System.Properties.Resources.Piechart;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(413, 521);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
             // 
             // Dashboard
             // 
@@ -210,10 +279,20 @@ namespace Gym_Management_System
             this.Text = "Dashboard";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.D_panel_calander.ResumeLayout(false);
+            this.D_panel_facilities.ResumeLayout(false);
+            this.D_panel_staff.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.D_panel_members.ResumeLayout(false);
+            this.D_panel_equipments.ResumeLayout(false);
             this.D_panel_RE.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -230,6 +309,11 @@ namespace Gym_Management_System
         private System.Windows.Forms.Panel D_panel_members;
         private System.Windows.Forms.Panel D_panel_equipments;
         private System.Windows.Forms.Panel D_panel_RE;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

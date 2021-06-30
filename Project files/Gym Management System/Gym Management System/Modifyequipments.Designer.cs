@@ -32,16 +32,16 @@ namespace Gym_Management_System
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtmodeid = new System.Windows.Forms.TextBox();
             this.lblmodequipid = new System.Windows.Forms.Label();
             this.lblmodpurdate = new System.Windows.Forms.Label();
             this.dateTimePickerequip = new System.Windows.Forms.DateTimePicker();
             this.lblmodequipamount = new System.Windows.Forms.Label();
             this.txtmodeamount = new System.Windows.Forms.TextBox();
             this.txtmodetype = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtmodename = new System.Windows.Forms.TextBox();
             this.lblmodequiptype = new System.Windows.Forms.Label();
             this.lblmodequipname = new System.Windows.Forms.Label();
+            this.txtmodename = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.picbmodequip1 = new System.Windows.Forms.PictureBox();
             this.picbmodequip2 = new System.Windows.Forms.PictureBox();
@@ -49,14 +49,12 @@ namespace Gym_Management_System
             this.picbmodequip4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnDelete_emod = new System.Windows.Forms.Button();
             this.btnupdate_emod = new System.Windows.Forms.Button();
             this.btncancel_emod = new System.Windows.Forms.Button();
-            this.btnDelete_emod = new System.Windows.Forms.Button();
-            this.txtmodeid = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbmodequip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbmodequip2)).BeginInit();
@@ -111,9 +109,9 @@ namespace Gym_Management_System
             this.tableLayoutPanel3.Controls.Add(this.lblmodequipamount, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.txtmodeamount, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.txtmodetype, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.panel1, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.lblmodequiptype, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.lblmodequipname, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.txtmodename, 1, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
@@ -128,6 +126,16 @@ namespace Gym_Management_System
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(605, 561);
             this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // txtmodeid
+            // 
+            this.txtmodeid.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtmodeid.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmodeid.Location = new System.Drawing.Point(399, 37);
+            this.txtmodeid.Name = "txtmodeid";
+            this.txtmodeid.Size = new System.Drawing.Size(109, 38);
+            this.txtmodeid.TabIndex = 7;
+            this.txtmodeid.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtmodeid_KeyDown);
             // 
             // lblmodequipid
             // 
@@ -201,25 +209,6 @@ namespace Gym_Management_System
             this.txtmodetype.Size = new System.Drawing.Size(252, 38);
             this.txtmodetype.TabIndex = 1;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.txtmodename);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(302, 112);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(303, 112);
-            this.panel1.TabIndex = 6;
-            // 
-            // txtmodename
-            // 
-            this.txtmodename.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtmodename.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmodename.Location = new System.Drawing.Point(25, 37);
-            this.txtmodename.Name = "txtmodename";
-            this.txtmodename.Size = new System.Drawing.Size(252, 38);
-            this.txtmodename.TabIndex = 2;
-            // 
             // lblmodequiptype
             // 
             this.lblmodequiptype.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -248,6 +237,15 @@ namespace Gym_Management_System
             this.lblmodequipname.Text = "Equipment Name   :";
             this.lblmodequipname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // txtmodename
+            // 
+            this.txtmodename.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtmodename.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmodename.Location = new System.Drawing.Point(327, 149);
+            this.txtmodename.Name = "txtmodename";
+            this.txtmodename.Size = new System.Drawing.Size(252, 38);
+            this.txtmodename.TabIndex = 1;
+            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 2;
@@ -272,6 +270,7 @@ namespace Gym_Management_System
             this.picbmodequip1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picbmodequip1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picbmodequip1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbmodequip1.Image = global::Gym_Management_System.Properties.Resources.Icon_awesome_image;
             this.picbmodequip1.Location = new System.Drawing.Point(26, 15);
             this.picbmodequip1.Name = "picbmodequip1";
             this.picbmodequip1.Size = new System.Drawing.Size(250, 250);
@@ -285,6 +284,7 @@ namespace Gym_Management_System
             this.picbmodequip2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picbmodequip2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picbmodequip2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbmodequip2.Image = global::Gym_Management_System.Properties.Resources.Icon_awesome_image;
             this.picbmodequip2.Location = new System.Drawing.Point(329, 15);
             this.picbmodequip2.Name = "picbmodequip2";
             this.picbmodequip2.Size = new System.Drawing.Size(250, 250);
@@ -298,6 +298,7 @@ namespace Gym_Management_System
             this.picbmodequip3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picbmodequip3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picbmodequip3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbmodequip3.Image = global::Gym_Management_System.Properties.Resources.Icon_awesome_image;
             this.picbmodequip3.Location = new System.Drawing.Point(26, 295);
             this.picbmodequip3.Name = "picbmodequip3";
             this.picbmodequip3.Size = new System.Drawing.Size(250, 250);
@@ -311,6 +312,7 @@ namespace Gym_Management_System
             this.picbmodequip4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picbmodequip4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picbmodequip4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picbmodequip4.Image = global::Gym_Management_System.Properties.Resources.Icon_awesome_image;
             this.picbmodequip4.Location = new System.Drawing.Point(329, 295);
             this.picbmodequip4.Name = "picbmodequip4";
             this.picbmodequip4.Size = new System.Drawing.Size(250, 250);
@@ -349,6 +351,22 @@ namespace Gym_Management_System
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1211, 61);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
+            // btnDelete_emod
+            // 
+            this.btnDelete_emod.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDelete_emod.BackColor = System.Drawing.Color.Red;
+            this.btnDelete_emod.FlatAppearance.BorderSize = 0;
+            this.btnDelete_emod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete_emod.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete_emod.ForeColor = System.Drawing.Color.White;
+            this.btnDelete_emod.Location = new System.Drawing.Point(939, 9);
+            this.btnDelete_emod.Name = "btnDelete_emod";
+            this.btnDelete_emod.Size = new System.Drawing.Size(139, 42);
+            this.btnDelete_emod.TabIndex = 1;
+            this.btnDelete_emod.Text = "Delete";
+            this.btnDelete_emod.UseVisualStyleBackColor = false;
+            this.btnDelete_emod.Click += new System.EventHandler(this.btnDelete_emod_Click);
+            // 
             // btnupdate_emod
             // 
             this.btnupdate_emod.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -381,32 +399,6 @@ namespace Gym_Management_System
             this.btncancel_emod.UseVisualStyleBackColor = false;
             this.btncancel_emod.Click += new System.EventHandler(this.btncancel_emod_Click);
             // 
-            // btnDelete_emod
-            // 
-            this.btnDelete_emod.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDelete_emod.BackColor = System.Drawing.Color.Red;
-            this.btnDelete_emod.FlatAppearance.BorderSize = 0;
-            this.btnDelete_emod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete_emod.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete_emod.ForeColor = System.Drawing.Color.White;
-            this.btnDelete_emod.Location = new System.Drawing.Point(939, 9);
-            this.btnDelete_emod.Name = "btnDelete_emod";
-            this.btnDelete_emod.Size = new System.Drawing.Size(139, 42);
-            this.btnDelete_emod.TabIndex = 1;
-            this.btnDelete_emod.Text = "Delete";
-            this.btnDelete_emod.UseVisualStyleBackColor = false;
-            this.btnDelete_emod.Click += new System.EventHandler(this.btnDelete_emod_Click);
-            // 
-            // txtmodeid
-            // 
-            this.txtmodeid.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtmodeid.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmodeid.Location = new System.Drawing.Point(399, 37);
-            this.txtmodeid.Name = "txtmodeid";
-            this.txtmodeid.Size = new System.Drawing.Size(109, 38);
-            this.txtmodeid.TabIndex = 7;
-            this.txtmodeid.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtmodeid_KeyDown);
-            // 
             // Modifyequipments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -420,8 +412,6 @@ namespace Gym_Management_System
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picbmodequip1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbmodequip2)).EndInit();
@@ -443,8 +433,6 @@ namespace Gym_Management_System
         private System.Windows.Forms.Label lblmodequipamount;
         private System.Windows.Forms.TextBox txtmodeamount;
         private System.Windows.Forms.TextBox txtmodetype;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtmodename;
         private System.Windows.Forms.Label lblmodequiptype;
         private System.Windows.Forms.Label lblmodequipname;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
@@ -458,5 +446,6 @@ namespace Gym_Management_System
         private System.Windows.Forms.Button btncancel_emod;
         private System.Windows.Forms.Button btnDelete_emod;
         private System.Windows.Forms.TextBox txtmodeid;
+        private System.Windows.Forms.TextBox txtmodename;
     }
 }

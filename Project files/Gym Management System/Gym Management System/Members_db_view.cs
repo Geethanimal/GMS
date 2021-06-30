@@ -20,7 +20,6 @@ namespace Gym_Management_System
         }
         private void FillGridView(string qry)
         {
-            string members_qry = "SELECT * FROM Members";
             DB_Connection dB_Connection = new DB_Connection();
             dataGridView_Members.DataSource = dB_Connection.getDataGrid(qry);
         }

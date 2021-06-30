@@ -121,37 +121,55 @@
   <data name="Icon awesome-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon awesome-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Facilities" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Facilities.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Path 20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Path 20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon ionic-ios-people" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon ionic-ios-people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon simple-cashapp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon simple-cashapp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon material-dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon material-dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon map-gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon map-gym.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Line 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Line 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="method-draw-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\method-draw-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon awesome-hand-holding-heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon awesome-hand-holding-heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon ionic-ios-settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon ionic-ios-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon awesome-people-carry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon awesome-people-carry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Line 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Line 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon ionic-ios-settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon ionic-ios-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calander " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calander .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon material-dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon material-dashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon ionic-ios-people" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon ionic-ios-people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon awesome-hand-holding-heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon awesome-hand-holding-heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon map-gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon map-gym.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon simple-cashapp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon simple-cashapp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="members" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\members.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Staff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Staff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Piechart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Piechart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="method-draw-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\method-draw-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Equipments" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Equipments.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

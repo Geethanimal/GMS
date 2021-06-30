@@ -39,8 +39,6 @@ namespace Gym_Management_System
             this.lblequipamount = new System.Windows.Forms.Label();
             this.txtamount = new System.Windows.Forms.TextBox();
             this.txtequiptype = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtequipname = new System.Windows.Forms.TextBox();
             this.lblequiptype = new System.Windows.Forms.Label();
             this.lblequipname = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -52,10 +50,10 @@ namespace Gym_Management_System
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.txtequipname = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -110,9 +108,9 @@ namespace Gym_Management_System
             this.tableLayoutPanel3.Controls.Add(this.lblequipamount, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.txtamount, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.txtequiptype, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.panel1, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.lblequiptype, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.lblequipname, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.txtequipname, 1, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
@@ -213,26 +211,6 @@ namespace Gym_Management_System
             this.txtequiptype.Name = "txtequiptype";
             this.txtequiptype.Size = new System.Drawing.Size(252, 38);
             this.txtequiptype.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.txtequipname);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(302, 112);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(303, 112);
-            this.panel1.TabIndex = 6;
-            // 
-            // txtequipname
-            // 
-            this.txtequipname.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtequipname.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtequipname.Location = new System.Drawing.Point(25, 37);
-            this.txtequipname.Name = "txtequipname";
-            this.txtequipname.Size = new System.Drawing.Size(252, 38);
-            this.txtequipname.TabIndex = 2;
-            this.txtequipname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblequiptype
             // 
@@ -393,6 +371,15 @@ namespace Gym_Management_System
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // txtequipname
+            // 
+            this.txtequipname.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtequipname.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtequipname.Location = new System.Drawing.Point(327, 149);
+            this.txtequipname.Name = "txtequipname";
+            this.txtequipname.Size = new System.Drawing.Size(252, 38);
+            this.txtequipname.TabIndex = 1;
+            // 
             // AddEquipments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -405,8 +392,6 @@ namespace Gym_Management_System
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -429,7 +414,6 @@ namespace Gym_Management_System
         private System.Windows.Forms.Label lblequipamount;
         private System.Windows.Forms.TextBox txtamount;
         private System.Windows.Forms.TextBox txtequiptype;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblequiptype;
         private System.Windows.Forms.Label lblequipname;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;

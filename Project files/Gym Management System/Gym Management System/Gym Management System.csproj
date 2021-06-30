@@ -49,6 +49,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,12 +74,6 @@
     </Compile>
     <Compile Include="AddFees.Designer.cs">
       <DependentUpon>AddFees.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddInstructions.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AddInstructions.Designer.cs">
-      <DependentUpon>AddInstructions.cs</DependentUpon>
     </Compile>
     <Compile Include="AddMembers.cs">
       <SubType>Form</SubType>
@@ -109,12 +105,6 @@
     <Compile Include="Add_mem_image_D_Box.Designer.cs">
       <DependentUpon>Add_mem_image_D_Box.cs</DependentUpon>
     </Compile>
-    <Compile Include="Body_type_finder.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Body_type_finder.Designer.cs">
-      <DependentUpon>Body_type_finder.cs</DependentUpon>
-    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,12 +130,6 @@
     <Compile Include="Equipment_View_dialoguebox.Designer.cs">
       <DependentUpon>Equipment_View_dialoguebox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Find_Body_type.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Find_Body_type.Designer.cs">
-      <DependentUpon>Find_Body_type.cs</DependentUpon>
-    </Compile>
     <Compile Include="Ft_login_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,11 +154,11 @@
     <Compile Include="GMS_1v.Designer.cs">
       <DependentUpon>GMS_1v.cs</DependentUpon>
     </Compile>
-    <Compile Include="Instructions.cs">
+    <Compile Include="Attendance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Instructions.Designer.cs">
-      <DependentUpon>Instructions.cs</DependentUpon>
+    <Compile Include="Attendance.Designer.cs">
+      <DependentUpon>Attendance.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -251,6 +235,18 @@
       <DependentUpon>Ft_login_form1.cs</DependentUpon>
     </Compile>
     <Compile Include="QRmailSender.cs" />
+    <Compile Include="reset_admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reset_admin.Designer.cs">
+      <DependentUpon>reset_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Staff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -269,20 +265,11 @@
     <Compile Include="Staff_Member_View_dialogbox.Designer.cs">
       <DependentUpon>Staff_Member_View_dialogbox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Workoutplans.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Workoutplans.Designer.cs">
-      <DependentUpon>Workoutplans.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AddEquipments.resx">
       <DependentUpon>AddEquipments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddFees.resx">
       <DependentUpon>AddFees.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddInstructions.resx">
-      <DependentUpon>AddInstructions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddMembers.resx">
       <DependentUpon>AddMembers.cs</DependentUpon>
@@ -299,9 +286,6 @@
     <EmbeddedResource Include="Add_mem_image_D_Box.resx">
       <DependentUpon>Add_mem_image_D_Box.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Body_type_finder.resx">
-      <DependentUpon>Body_type_finder.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,9 +297,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Equipment_View_dialoguebox.resx">
       <DependentUpon>Equipment_View_dialoguebox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Find_Body_type.resx">
-      <DependentUpon>Find_Body_type.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ft_login_form.resx">
       <DependentUpon>Ft_login_form.cs</DependentUpon>
@@ -329,8 +310,8 @@
     <EmbeddedResource Include="GMS_1v.resx">
       <DependentUpon>GMS_1v.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Instructions.resx">
-      <DependentUpon>Instructions.cs</DependentUpon>
+    <EmbeddedResource Include="Attendance.resx">
+      <DependentUpon>Attendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -378,6 +359,12 @@
     <EmbeddedResource Include="Ft_login_form1.resx">
       <DependentUpon>Ft_login_form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="reset_admin.resx">
+      <DependentUpon>reset_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Staff.resx">
       <DependentUpon>Staff.cs</DependentUpon>
     </EmbeddedResource>
@@ -386,9 +373,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Staff_Member_View_dialogbox.resx">
       <DependentUpon>Staff_Member_View_dialogbox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Workoutplans.resx">
-      <DependentUpon>Workoutplans.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -439,6 +423,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calander .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piechart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\members.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Facilities.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equipments.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

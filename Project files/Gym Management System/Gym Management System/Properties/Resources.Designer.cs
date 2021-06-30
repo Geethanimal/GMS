@@ -73,6 +73,36 @@ namespace Gym_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Calander_ {
+            get {
+                object obj = ResourceManager.GetObject("Calander ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Equipments {
+            get {
+                object obj = ResourceManager.GetObject("Equipments", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Facilities {
+            get {
+                object obj = ResourceManager.GetObject("Facilities", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icon_awesome_hand_holding_heart {
             get {
                 object obj = ResourceManager.GetObject("Icon awesome-hand-holding-heart", resourceCulture);
@@ -163,6 +193,16 @@ namespace Gym_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap members {
+            get {
+                object obj = ResourceManager.GetObject("members", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap method_draw_image {
             get {
                 object obj = ResourceManager.GetObject("method-draw-image", resourceCulture);
@@ -176,6 +216,26 @@ namespace Gym_Management_System.Properties {
         internal static System.Drawing.Bitmap Path_20 {
             get {
                 object obj = ResourceManager.GetObject("Path 20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Piechart {
+            get {
+                object obj = ResourceManager.GetObject("Piechart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Staff {
+            get {
+                object obj = ResourceManager.GetObject("Staff", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

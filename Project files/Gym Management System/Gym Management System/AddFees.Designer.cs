@@ -38,7 +38,7 @@ namespace Gym_Management_System
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cash_tb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -46,10 +46,10 @@ namespace Gym_Management_System
             this.label_AM_m_id = new System.Windows.Forms.Label();
             this.label_AM_P = new System.Windows.Forms.Label();
             this.label_AM_MN = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.memberid_tb = new System.Windows.Forms.TextBox();
+            this.lbl_mname = new System.Windows.Forms.Label();
+            this.lbl_package_name = new System.Windows.Forms.Label();
+            this.lbl_fee = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAF_Cancel = new System.Windows.Forms.Button();
             this.btnAF_Remove = new System.Windows.Forms.Button();
@@ -146,7 +146,7 @@ namespace Gym_Management_System
             this.tableLayoutPanel5.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.label4, 0, 2);
-            this.tableLayoutPanel5.Controls.Add(this.textBox2, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.cash_tb, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.label8, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.label9, 1, 2);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -199,20 +199,20 @@ namespace Gym_Management_System
             this.label4.Location = new System.Drawing.Point(0, 147);
             this.label4.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(232, 58);
+            this.label4.Size = new System.Drawing.Size(212, 58);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Dance and Time :";
+            this.label4.Text = "Date and Time :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // cash_tb
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox2.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(306, 35);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 35, 15, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(285, 43);
-            this.textBox2.TabIndex = 0;
+            this.cash_tb.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cash_tb.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cash_tb.Location = new System.Drawing.Point(306, 35);
+            this.cash_tb.Margin = new System.Windows.Forms.Padding(3, 35, 15, 3);
+            this.cash_tb.Name = "cash_tb";
+            this.cash_tb.Size = new System.Drawing.Size(285, 43);
+            this.cash_tb.TabIndex = 0;
             // 
             // label8
             // 
@@ -249,10 +249,10 @@ namespace Gym_Management_System
             this.tableLayoutPanel4.Controls.Add(this.label_AM_m_id, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label_AM_P, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.label_AM_MN, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label5, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label6, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.label7, 1, 3);
+            this.tableLayoutPanel4.Controls.Add(this.memberid_tb, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_mname, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_package_name, 1, 2);
+            this.tableLayoutPanel4.Controls.Add(this.lbl_fee, 1, 3);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
@@ -324,54 +324,55 @@ namespace Gym_Management_System
             this.label_AM_MN.Text = "Member Name :";
             this.label_AM_MN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // memberid_tb
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(305, 35);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 35, 25, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(275, 43);
-            this.textBox1.TabIndex = 0;
+            this.memberid_tb.Dock = System.Windows.Forms.DockStyle.Left;
+            this.memberid_tb.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memberid_tb.Location = new System.Drawing.Point(305, 35);
+            this.memberid_tb.Margin = new System.Windows.Forms.Padding(3, 35, 25, 3);
+            this.memberid_tb.Name = "memberid_tb";
+            this.memberid_tb.Size = new System.Drawing.Size(275, 43);
+            this.memberid_tb.TabIndex = 0;
+            this.memberid_tb.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
-            // label5
+            // lbl_mname
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label5.Location = new System.Drawing.Point(305, 97);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 38);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "____";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_mname.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_mname.AutoSize = true;
+            this.lbl_mname.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_mname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lbl_mname.Location = new System.Drawing.Point(305, 97);
+            this.lbl_mname.Name = "lbl_mname";
+            this.lbl_mname.Size = new System.Drawing.Size(65, 38);
+            this.lbl_mname.TabIndex = 4;
+            this.lbl_mname.Text = "____";
+            this.lbl_mname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // lbl_package_name
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label6.Location = new System.Drawing.Point(305, 157);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 38);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "____";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_package_name.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_package_name.AutoSize = true;
+            this.lbl_package_name.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_package_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lbl_package_name.Location = new System.Drawing.Point(305, 157);
+            this.lbl_package_name.Name = "lbl_package_name";
+            this.lbl_package_name.Size = new System.Drawing.Size(65, 38);
+            this.lbl_package_name.TabIndex = 4;
+            this.lbl_package_name.Text = "____";
+            this.lbl_package_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label7
+            // lbl_fee
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label7.Location = new System.Drawing.Point(305, 215);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 38);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "____";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_fee.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_fee.AutoSize = true;
+            this.lbl_fee.Font = new System.Drawing.Font("Nirmala UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
+            this.lbl_fee.Location = new System.Drawing.Point(305, 215);
+            this.lbl_fee.Name = "lbl_fee";
+            this.lbl_fee.Size = new System.Drawing.Size(65, 38);
+            this.lbl_fee.TabIndex = 4;
+            this.lbl_fee.Text = "____";
+            this.lbl_fee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel6
             // 
@@ -402,9 +403,9 @@ namespace Gym_Management_System
             this.btnAF_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAF_Cancel.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAF_Cancel.ForeColor = System.Drawing.Color.White;
-            this.btnAF_Cancel.Location = new System.Drawing.Point(446, 15);
+            this.btnAF_Cancel.Location = new System.Drawing.Point(446, 7);
             this.btnAF_Cancel.Name = "btnAF_Cancel";
-            this.btnAF_Cancel.Size = new System.Drawing.Size(317, 34);
+            this.btnAF_Cancel.Size = new System.Drawing.Size(317, 50);
             this.btnAF_Cancel.TabIndex = 0;
             this.btnAF_Cancel.Text = "Cancel";
             this.btnAF_Cancel.UseVisualStyleBackColor = false;
@@ -418,9 +419,9 @@ namespace Gym_Management_System
             this.btnAF_Remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAF_Remove.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAF_Remove.ForeColor = System.Drawing.Color.White;
-            this.btnAF_Remove.Location = new System.Drawing.Point(769, 15);
+            this.btnAF_Remove.Location = new System.Drawing.Point(769, 7);
             this.btnAF_Remove.Name = "btnAF_Remove";
-            this.btnAF_Remove.Size = new System.Drawing.Size(317, 34);
+            this.btnAF_Remove.Size = new System.Drawing.Size(317, 50);
             this.btnAF_Remove.TabIndex = 0;
             this.btnAF_Remove.Text = "Remove";
             this.btnAF_Remove.UseVisualStyleBackColor = false;
@@ -434,9 +435,9 @@ namespace Gym_Management_System
             this.btnAF_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAF_Add.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAF_Add.ForeColor = System.Drawing.Color.White;
-            this.btnAF_Add.Location = new System.Drawing.Point(123, 15);
+            this.btnAF_Add.Location = new System.Drawing.Point(123, 7);
             this.btnAF_Add.Name = "btnAF_Add";
-            this.btnAF_Add.Size = new System.Drawing.Size(317, 34);
+            this.btnAF_Add.Size = new System.Drawing.Size(317, 50);
             this.btnAF_Add.TabIndex = 0;
             this.btnAF_Add.Text = "ADD";
             this.btnAF_Add.UseVisualStyleBackColor = false;
@@ -476,7 +477,6 @@ namespace Gym_Management_System
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
@@ -484,13 +484,14 @@ namespace Gym_Management_System
         private System.Windows.Forms.Label label_AM_m_id;
         private System.Windows.Forms.Label label_AM_P;
         private System.Windows.Forms.Label label_AM_MN;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbl_mname;
+        private System.Windows.Forms.Label lbl_package_name;
+        private System.Windows.Forms.Label lbl_fee;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Button btnAF_Cancel;
         private System.Windows.Forms.Button btnAF_Remove;
         private System.Windows.Forms.Button btnAF_Add;
+        public System.Windows.Forms.TextBox memberid_tb;
+        public System.Windows.Forms.TextBox cash_tb;
     }
 }

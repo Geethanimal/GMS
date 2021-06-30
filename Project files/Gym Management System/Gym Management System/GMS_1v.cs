@@ -158,7 +158,7 @@ namespace Gym_Management_System
             Main_label.Text = "Instructions";
             //Load Instructions form
             this.form_load_panel.Controls.Clear();
-            Instructions instructions = new Instructions() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Attendance instructions = new Attendance() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             instructions.FormBorderStyle = FormBorderStyle.None;
             this.form_load_panel.Controls.Add(instructions);
             instructions.Show();
@@ -178,6 +178,11 @@ namespace Gym_Management_System
             btnDashboard.BackColor = Color.FromArgb(24, 30, 54);
             //changing main label name
             Main_label.Text = "Settings";
+            this.form_load_panel.Controls.Clear();
+            Settings settings = new Settings() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            settings.FormBorderStyle = FormBorderStyle.None;
+            this.form_load_panel.Controls.Add(settings);
+            settings.Show();
         }
 
         private void btnSettings_Leave(object sender, EventArgs e)
@@ -193,11 +198,6 @@ namespace Gym_Management_System
                 Application.Exit();
             }
             
-        }
-
-        private void btnMaximize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
