@@ -29,6 +29,9 @@ namespace Gym_Management_System
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.D_panel_calander = new System.Windows.Forms.Panel();
@@ -39,10 +42,13 @@ namespace Gym_Management_System
             this.D_panel_members = new System.Windows.Forms.Panel();
             this.D_panel_equipments = new System.Windows.Forms.Panel();
             this.D_panel_RE = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.D_panel_RE.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -164,12 +170,33 @@ namespace Gym_Management_System
             // D_panel_RE
             // 
             this.D_panel_RE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.D_panel_RE.Controls.Add(this.chart1);
             this.D_panel_RE.Dock = System.Windows.Forms.DockStyle.Fill;
             this.D_panel_RE.Location = new System.Drawing.Point(7, 6);
             this.D_panel_RE.Margin = new System.Windows.Forms.Padding(7, 6, 4, 12);
             this.D_panel_RE.Name = "D_panel_RE";
             this.D_panel_RE.Size = new System.Drawing.Size(413, 521);
             this.D_panel_RE.TabIndex = 1;
+            // 
+            // chart1
+            // 
+            this.chart1.BackColor = System.Drawing.Color.Transparent;
+            this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(0, 0);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(413, 521);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
             // 
             // Dashboard
             // 
@@ -185,6 +212,8 @@ namespace Gym_Management_System
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.D_panel_RE.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,5 +230,6 @@ namespace Gym_Management_System
         private System.Windows.Forms.Panel D_panel_members;
         private System.Windows.Forms.Panel D_panel_equipments;
         private System.Windows.Forms.Panel D_panel_RE;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

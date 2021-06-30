@@ -493,9 +493,10 @@ namespace Gym_Management_System
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(328, 19);
+            this.pictureBox1.Image = global::Gym_Management_System.Properties.Resources.avatar;
+            this.pictureBox1.Location = new System.Drawing.Point(305, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(297, 183);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -653,6 +654,7 @@ namespace Gym_Management_System
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ModifyStaff";
             this.Size = new System.Drawing.Size(1211, 680);
+            this.Load += new System.EventHandler(this.ModifyStaff_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

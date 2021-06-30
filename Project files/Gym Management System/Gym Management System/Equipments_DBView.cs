@@ -59,33 +59,39 @@ namespace Gym_Management_System
             eVD.lbl_eprice.Text = dataGridView_Equipments.Rows[e.RowIndex].Cells["Equip_Amount"].Value.ToString();
             
 
-            string qry = "SELECT Equip_img1,Equip_img2,Equip_img3,Equip_img4 From Equipment Where Equip_ID = '"+eVD+"' ";
-
+            string qry = "SELECT Equip_img1,Equip_img2,Equip_img3,Equip_img4 From Equipment Where Equip_ID = '"+id+"' ";
+            Console.WriteLine(qry);
             DB_Connection dB_Connection = new DB_Connection();
             SqlDataReader dr = dB_Connection.getData(qry);
-            dr.Read();
+            if (dr.HasRows)
+            {
+                dr.Read();
 
-            string Equip_img1 = dr["Equip_img1"].ToString();
-            string Equip_img2 = dr["Equip_img2"].ToString();
-            string Equip_img3 = dr["Equip_img3"].ToString();
-            string Equip_img4 = dr["Equip_img4"].ToString();
+                string Equip_img1 = dr["Equip_img1"].ToString();
+                string Equip_img2 = dr["Equip_img2"].ToString();
+                string Equip_img3 = dr["Equip_img3"].ToString();
+                string Equip_img4 = dr["Equip_img4"].ToString();
 
-            if (Equip_img1 != null)
-            {
-                eVD.equippicbox1.Image = new Bitmap(Equip_img1);
+                if (Equip_img1 != null)
+                {
+                    eVD.equippicbox1.Image = new Bitmap(Equip_img1);
+                }
+                if (Equip_img2 != null)
+                {
+                    eVD.equippicbox2.Image = new Bitmap(Equip_img2);
+                }
+                if (Equip_img3 != null)
+                {
+                    eVD.equippicbox3.Image = new Bitmap(Equip_img3);
+                }
+                if (Equip_img4 != null)
+                {
+                    eVD.equippicbox4.Image = new Bitmap(Equip_img4);
+                }
+
             }
-            if (Equip_img2 != null)
-            {
-                eVD.equippicbox1.Image = new Bitmap(Equip_img2);
-            }
-            if (Equip_img3 != null)
-            {
-                eVD.equippicbox1.Image = new Bitmap(Equip_img3);
-            }
-            if (Equip_img4 != null)
-            {
-                eVD.equippicbox1.Image = new Bitmap(Equip_img4);
-            }
+
+            eVD.ShowDialog();
 
 
         }

@@ -187,7 +187,12 @@ namespace Gym_Management_System
 
         private void Close_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult dialog = MessageBox.Show("Do you want to close GMS ?","Close Program",MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            
         }
 
         private void btnMaximize_Click(object sender, EventArgs e)

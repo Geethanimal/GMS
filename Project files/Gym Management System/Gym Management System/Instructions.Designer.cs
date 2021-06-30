@@ -228,7 +228,7 @@ namespace Gym_Management_System
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.99923F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 89.00078F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
             this.tableLayoutPanel5.Controls.Add(this.panel_Members, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 128);
@@ -251,7 +251,7 @@ namespace Gym_Management_System
             this.panel_Members.Controls.Add(this.modifyequipments1);
             this.panel_Members.Controls.Add(this.equipments_DBView1);
             this.panel_Members.Controls.Add(this.addEquipments1);
-            this.panel_Members.Location = new System.Drawing.Point(143, 50);
+            this.panel_Members.Location = new System.Drawing.Point(142, 50);
             this.panel_Members.Margin = new System.Windows.Forms.Padding(0, 50, 0, 0);
             this.panel_Members.Name = "panel_Members";
             this.panel_Members.Size = new System.Drawing.Size(1157, 652);

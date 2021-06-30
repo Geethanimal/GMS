@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace Gym_Management_System
 {
@@ -78,8 +79,8 @@ namespace Gym_Management_System
             string type = "StaffMember";
             string NIC_No = txt_boxNIC.Text;
             string name = txt_boxName.Text;
-            string Dob = dateTimePickerDOB.Text;
-            string joinDte = dateTimePickerJoinedDate.Text;
+            string Dob = this.dateTimePickerDOB.Text;
+            string joinDte = this.dateTimePickerJoinedDate.Text;
             string jobType = txt_boxJobtype.Text;
             string homeAdrss = txt_boxHomeAddress.Text;
             string Adrs_Lvg = txt_boxAddressLivg.Text;
@@ -94,14 +95,28 @@ namespace Gym_Management_System
             string qrsubject = (staffmem_id + NIC_No + name).ToString();
 
             DB_Connection dB_Connection = new DB_Connection();
-            string insrtqry = "INSERT INTO Staff_Member (Capture_path,QR_img_path,NIC,Name,Gender,Job_Type,Professional_qualifications,Address_Living,Mobile_no_public,Mobile_no_private,Home_Address,Emergency_Contact_Name,Emergency_Contact_Number,Email) VALUES('"+staffmem_imgpath+"','"+NIC_No+"','"+name+"','"+Gendr+"','"+jobType+"','"+ProQuli+"','"+Adrs_Lvg+"','"+PubNo+"','"+PrivtNo+"','"+homeAdrss+"','"+EmergConName+"','"+EmergConNo+"','"+Email+"' )";
+            string insrtqry = "INSERT INTO Staff_Member (Capture_path,QR_img_path,NIC,Name,Gender,Job_Type,Professional_qualifications,DOB,Joined_date,Address_Living,Mobile_no_public,Mobile_no_private,Home_Address,Emergency_Contact_Name,Emergency_Contact_Number,Email) VALUES('"+staffmem_imgpath+"','"+NIC_No+"','"+name+"','"+Gendr+"','"+jobType+"','"+ProQuli+"','"+Dob+"','"+joinDte+"','"+Adrs_Lvg+"','"+PubNo+"','"+PrivtNo+"','"+homeAdrss+"','"+EmergConName+"','"+EmergConNo+"','"+Email+"' )";
             Console.WriteLine(insrtqry);
             dB_Connection.InsertData(insrtqry);
-
                 QRmailSender qRmailSender = new QRmailSender();
                 qRmailSender.qrgen(qrsubject, qrimgpath);
+            if (Email != null)
+            {
+                DialogResult dialog = MessageBox.Show("This Staff member has not provided an Email Address! So, You can print the QR code. Do you want to print it ?", "Print QR Code", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    string filename = qrimgpath;
+                    var p = new Process();
+                    p.StartInfo.FileName = filename;
+                    p.StartInfo.Verb = "print";
+                    p.Start();
+                }
+            } else
+            {
                 qRmailSender.Emailgen(name, type);
                 qRmailSender.Emailsend(Email, qrimgpath);
+            }
+                
 
             
         }

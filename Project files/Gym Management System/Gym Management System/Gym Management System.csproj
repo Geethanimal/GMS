@@ -109,6 +109,12 @@
     <Compile Include="Add_mem_image_D_Box.Designer.cs">
       <DependentUpon>Add_mem_image_D_Box.cs</DependentUpon>
     </Compile>
+    <Compile Include="Body_type_finder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Body_type_finder.Designer.cs">
+      <DependentUpon>Body_type_finder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -293,6 +299,9 @@
     <EmbeddedResource Include="Add_mem_image_D_Box.resx">
       <DependentUpon>Add_mem_image_D_Box.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Body_type_finder.resx">
+      <DependentUpon>Body_type_finder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -424,6 +433,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icon ionic-ios-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon awesome-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

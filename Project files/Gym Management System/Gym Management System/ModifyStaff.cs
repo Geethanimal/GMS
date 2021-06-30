@@ -21,6 +21,7 @@ namespace Gym_Management_System
         public ModifyStaff()
         {
             InitializeComponent();
+           
         }
 
         private void textbox_Members_Id_KeyDown(object sender, KeyEventArgs e)
@@ -152,6 +153,11 @@ namespace Gym_Management_System
             txt_boxMail.Text = "";
             txt_boxGender.Text = "";
             string qrimgpath = "";
+        }
+
+        private void ModifyStaff_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Image = new Bitmap("E:\\NSBM\\OneDrive - National School of Busness Management\\Projects\\C#\\GMS\\Project files\\Gym Management System\\Gym Management System\\Resources\\avatar.png");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

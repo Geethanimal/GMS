@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Icon awesome-image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon awesome-image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Path 20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Path 20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,10 +145,13 @@
   <data name="Icon awesome-hand-holding-heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon awesome-hand-holding-heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icon ionic-ios-settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon ionic-ios-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icon awesome-people-carry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon awesome-people-carry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon ionic-ios-settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon ionic-ios-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
